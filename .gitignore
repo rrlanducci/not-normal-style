@@ -3,3 +3,7 @@ backup-before-*/
 update-*.py
 create-*.py
 refine-*.py
+
+# Local design sources and helper scripts
+local-assets/
+*.py
