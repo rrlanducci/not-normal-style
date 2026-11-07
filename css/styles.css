@@ -454,3 +454,53 @@ nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 
     line-height: .95;
   }
 }
+
+
+/* DEFINITIVE SHARED HEADER BRAND */
+.site-header {
+  min-height: 72px;
+}
+
+.site-brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 12px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.site-brand-logo {
+  display: block !important;
+  width: 46px !important;
+  height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  object-fit: contain;
+  flex: 0 0 46px;
+}
+
+.site-brand-name {
+  white-space: nowrap;
+  font-size: .78rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 64px;
+  }
+
+  .site-brand-logo {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+    flex-basis: 40px;
+  }
+
+  .site-brand-name {
+    display: none;
+  }
+}
