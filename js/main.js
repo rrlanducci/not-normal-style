@@ -19,3 +19,15 @@ if (menuButton && navigation) {
     });
   });
 }
+
+
+/* Keep only one detailed service open at a time. */
+const serviceItems = document.querySelectorAll(".service-item");
+serviceItems.forEach((currentItem) => {
+  currentItem.addEventListener("toggle", () => {
+    if (!currentItem.open) return;
+    serviceItems.forEach((otherItem) => {
+      if (otherItem !== currentItem) otherItem.open = false;
+    });
+  });
+});
