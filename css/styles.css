@@ -72,3 +72,70 @@ footer { display: flex; justify-content: space-between; width: min(100% - 48px, 
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/*
+  ==================================================
+  EDITORIAL HERO WITH PHOTOGRAPH
+  ==================================================
+
+  On larger screens, the hero uses two columns:
+  - the text occupies the left column;
+  - Camila's photograph occupies the right column.
+*/
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/*
+  Keeps the text comfortably readable.
+*/
+.hero-content {
+  max-width: 720px;
+}
+
+/*
+  Creates a tall editorial frame for the photograph.
+  "overflow: hidden" hides any part extending beyond it.
+*/
+.hero-image {
+  height: min(72vh, 780px);
+  min-height: 520px;
+  overflow: hidden;
+  background-color: #e4e1d8;
+}
+
+/*
+  Makes the image fill its frame without stretching.
+
+  "object-fit: cover" may crop part of the photograph
+  while preserving its original proportions.
+*/
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*
+  MOBILE HERO
+
+  Below 760 pixels, the layout changes from two columns
+  to one column. The text appears above the photograph.
+*/
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-image {
+    height: 70vh;
+    min-height: 440px;
+  }
+}
