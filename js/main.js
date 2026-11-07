@@ -31,3 +31,31 @@ serviceItems.forEach((currentItem) => {
     });
   });
 });
+
+
+/* Services category submenu. */
+const submenuButton = document.querySelector(".submenu-button");
+const servicesSubmenu = document.querySelector("#services-submenu");
+
+if (submenuButton && servicesSubmenu) {
+  const closeServicesSubmenu = () => {
+    servicesSubmenu.classList.remove("is-open");
+    submenuButton.setAttribute("aria-expanded", "false");
+  };
+
+  submenuButton.addEventListener("click", () => {
+    const isOpen = servicesSubmenu.classList.toggle("is-open");
+    submenuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  servicesSubmenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeServicesSubmenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeServicesSubmenu();
+      submenuButton.focus();
+    }
+  });
+}

@@ -176,3 +176,34 @@ footer { display: flex; justify-content: space-between; width: min(100% - 48px, 
  .service-content ul { grid-template-columns:1fr; }
  .services-closing { padding-top:80px; }
 }
+
+
+/* MULTI-PAGE NAVIGATION AND SERVICES PREVIEW */
+nav { align-items: center; }
+.nav-submenu { position: relative; }
+.nav-submenu-topline { display: flex; align-items: center; gap: 5px; }
+.submenu-button { width: 24px; height: 24px; border: 0; padding: 0; color: inherit; background: transparent; font: inherit; cursor: pointer; }
+.submenu-button[aria-expanded="true"] { transform: rotate(45deg); }
+.submenu { position: absolute; top: calc(100% + 20px); left: -20px; display: none; width: 300px; padding: 16px 20px; border: 1px solid var(--line); background: var(--white); box-shadow: 0 18px 40px rgba(0,0,0,.12); }
+.submenu.is-open { display: grid; gap: 12px; }
+.submenu a { font-size: .68rem; line-height: 1.4; }
+nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+.page-hero { width: min(100% - 48px,var(--content-width)); margin: 0 auto; padding: 110px 0 90px; }
+.page-hero h1 { font-size: clamp(4.5rem,12vw,10rem); }
+.page-hero > p:last-child { max-width: 620px; margin: 36px 0 0; font-size: 1.1rem; }
+.services-preview { background: var(--paper); }
+.preview-grid { display: grid; grid-template-columns: repeat(2,1fr); margin: 70px 0 46px; border-top: 1px solid var(--line); }
+.preview-grid a { min-height: 170px; padding: 28px 32px 28px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.preview-grid a:nth-child(even) { padding-left: 32px; border-left: 1px solid var(--line); }
+.preview-grid a:hover h3,.preview-grid a:focus-visible h3 { text-decoration: underline; text-underline-offset: 7px; }
+.preview-grid span { color: var(--grey); font-size: .68rem; letter-spacing: .15em; }
+.preview-grid h3 { max-width: 430px; }
+.service-group { scroll-margin-top: 100px; }
+@media (max-width:760px) {
+  .nav-submenu { width: 100%; }
+  .nav-submenu-topline { justify-content: flex-end; }
+  .submenu { position: static; width: 100%; margin-top: 10px; padding: 14px 0; border-width: 1px 0 0; box-shadow: none; background: transparent; text-align: right; }
+  .page-hero { padding: 80px 0 64px; }
+  .preview-grid { grid-template-columns: 1fr; }
+  .preview-grid a,.preview-grid a:nth-child(even) { min-height: auto; padding: 26px 0; border-left: 0; }
+}
