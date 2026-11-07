@@ -207,3 +207,81 @@ nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 
   .preview-grid { grid-template-columns: 1fr; }
   .preview-grid a,.preview-grid a:nth-child(even) { min-height: auto; padding: 26px 0; border-left: 0; }
 }
+
+
+/* MOBILE NAVIGATION REFINEMENT */
+@media (max-width: 760px) {
+  /* Keep the open menu compact instead of filling most of the screen. */
+  #main-navigation {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    gap: 0;
+    padding: 12px 24px 24px;
+    text-align: left;
+  }
+
+  /* Give each main destination a clear, consistent touch target. */
+  #main-navigation > a,
+  .nav-submenu-topline {
+    min-height: 54px;
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  #main-navigation > a {
+    display: flex;
+    align-items: center;
+    font-size: .76rem;
+  }
+
+  .nav-submenu-topline {
+    justify-content: space-between;
+  }
+
+  .nav-submenu-topline > a {
+    font-size: .76rem;
+  }
+
+  /* Make the plus button easier to tap without dominating the row. */
+  .submenu-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* Present categories as a compact editorial list. */
+  .submenu {
+    margin: 0;
+    padding: 10px 0 12px 18px;
+    border: 0;
+    text-align: left;
+  }
+
+  .submenu.is-open {
+    gap: 0;
+  }
+
+  .submenu a {
+    padding: 10px 0;
+    color: var(--grey);
+    font-size: .72rem;
+    letter-spacing: .04em;
+    line-height: 1.45;
+    text-transform: none;
+  }
+
+  /* Reduce the dramatic heading slightly so it fits a phone comfortably. */
+  .services-section h2 {
+    font-size: clamp(3rem, 15vw, 4.4rem);
+    line-height: .98;
+  }
+
+  .services-intro {
+    margin-bottom: 48px;
+  }
+
+  .service-group-heading h3 {
+    font-size: 2rem;
+  }
+}
