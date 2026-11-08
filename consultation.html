@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a personal image consultation with Camila Rades at Not Normal Style.">
+  <title>Request a Consultation | Not Normal Style</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Not Normal Style home">
+      <img class="site-brand-logo" src="images/not-normal-style-logo-cropped.png" alt="">
+      <span class="site-brand-name">NOT NORMAL STYLE</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <div class="nav-submenu">
+        <div class="nav-submenu-topline">
+          <a href="services.html">Services</a>
+          <button class="submenu-button" type="button" aria-expanded="false" aria-controls="services-submenu" aria-label="Show service categories">+</button>
+        </div>
+        <div class="submenu" id="services-submenu">
+          <a href="services.html#signature">The Signature Experience</a>
+          <a href="services.html#discover">Discover Your Style</a>
+          <a href="services.html#wardrobe">Your Wardrobe, Redefined</a>
+          <a href="services.html#shopping">Shopping &amp; Special Experiences</a>
+          <a href="services.html#occasions">Special Occasions</a>
+          <a href="services.html#corporate">Corporate &amp; Professional Image</a>
+        </div>
+      </div>
+      <a href="consultation.html" aria-current="page">Consultation</a>
+    </nav>
+  </header>
+  <main>
+    <section class="consultation-hero">
+      <p class="eyebrow">Personal Image Consulting · Camila&nbsp;Rades</p>
+      <h1>Begin with a conversation.</h1>
+      <p>Share a little about what you would like to discover, change or prepare for. Your answers will help identify the most relevant starting point.</p>
+    </section>
+
+    <section class="journey-steps" aria-label="What happens next">
+      <article><span>01</span><h2>Share</h2><p>Tell Camila&nbsp;Rades what brings you to Not Normal Style.</p></article>
+      <article><span>02</span><h2>Review</h2><p>Your enquiry is reviewed personally and confidentially.</p></article>
+      <article><span>03</span><h2>Next step</h2><p>Receive a personal reply with the most relevant recommendation.</p></article>
+    </section>
+
+    <section class="consultation-form-section">
+      <div class="form-introduction">
+        <p class="eyebrow">Consultation enquiry</p>
+        <h2>Tell us what you need.</h2>
+        <p>Fields marked with an asterisk are required. Please do not include health information, identity documents, payment details or other sensitive personal information.</p>
+        <div class="form-preview-notice" role="note"><strong>Local preview:</strong> the form is designed and validated, but delivery is not connected yet. No information will be transmitted until a form provider and business email are configured.</div>
+      </div>
+
+      <form class="consultation-form" id="consultation-form" novalidate>
+        <div class="form-row two-columns">
+          <div class="field-group">
+            <label for="full-name">Name <span aria-hidden="true">*</span></label>
+            <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+            <p class="field-error" id="full-name-error"></p>
+          </div>
+          <div class="field-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="field-error" id="email-error"></p>
+          </div>
+          <div class="field-group confirm-email-field">
+            <label for="confirm-email">Confirm email <span aria-hidden="true">*</span></label>
+            <input id="confirm-email" name="confirm-email" type="email" autocomplete="email" required>
+            <p class="field-help">Enter the same email address again.</p>
+            <p class="field-error" id="confirm-email-error"></p>
+          </div>
+        </div>
+
+        <div class="form-row two-columns">
+          <div class="field-group">
+            <label for="location">Country or city</label>
+            <input id="location" name="location" type="text" autocomplete="address-level2">
+          </div>
+          <div class="field-group">
+            <label for="language">Preferred language <span aria-hidden="true">*</span></label>
+            <select id="language" name="language" required>
+              <option value="">Select a language</option>
+              <option value="English">English</option>
+              <option value="Portuguese">Portuguese</option>
+            </select>
+            <p class="field-error" id="language-error"></p>
+          </div>
+        </div>
+
+        <fieldset class="choice-group" aria-describedby="interest-help interest-error">
+          <legend>What brings you here? <span aria-hidden="true">*</span></legend>
+          <p class="field-help" id="interest-help">Choose the option that feels closest. You do not need to know which service is right for you.</p>
+          <div class="choice-grid">
+            <label><input type="radio" name="interest" value="Personal style" required><span>Understand my personal style</span></label>
+            <label><input type="radio" name="interest" value="Colour"><span>Find direction with colour</span></label>
+            <label><input type="radio" name="interest" value="Wardrobe"><span>Improve or simplify my wardrobe</span></label>
+            <label><input type="radio" name="interest" value="Event"><span>Prepare for an event or occasion</span></label>
+            <label><input type="radio" name="interest" value="Professional image"><span>Develop my professional image</span></label>
+            <label><input type="radio" name="interest" value="Complete experience"><span>Explore the complete experience</span></label>
+            <label><input type="radio" name="interest" value="Not sure"><span>I am not sure yet</span></label>
+          </div>
+          <p class="field-error" id="interest-error"></p>
+        </fieldset>
+
+        <div class="form-row two-columns">
+          <div class="field-group">
+            <label for="timing">Preferred timing</label>
+            <select id="timing" name="timing">
+              <option value="">Select timing</option>
+              <option>As soon as possible</option>
+              <option>Within the next month</option>
+              <option>Within the next three months</option>
+              <option>I am exploring for now</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="referral">How did you hear about Not Normal Style?</label>
+            <input id="referral" name="referral" type="text">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="message">What would you like help with? <span aria-hidden="true">*</span></label>
+          <p class="field-help" id="message-help">You may include your goals, current challenges, timing or an occasion you are preparing for.</p>
+          <textarea id="message" name="message" rows="7" minlength="20" aria-describedby="message-help message-error" required></textarea>
+          <p class="field-error" id="message-error"></p>
+        </div>
+
+        <div class="privacy-summary">
+          <h2>How we use your information</h2>
+          <p>Not Normal Style will use the information you provide to review and respond to your consultation enquiry, recommend an appropriate next step and communicate with you about the requested service. Your information will not be used for marketing unless you separately choose to receive marketing communications.</p>
+        </div>
+
+        <div class="consent-group">
+          <label>
+            <input id="privacy-acknowledgement" name="privacy-acknowledgement" type="checkbox" required>
+            <span>I have read the <a href="privacy.html" target="_blank">Privacy Policy</a> and understand how my personal data will be used to handle my enquiry. <span aria-hidden="true">*</span></span>
+          </label>
+          <p class="field-error" id="privacy-acknowledgement-error"></p>
+        </div>
+
+        <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+        <button class="button button-dark form-submit" type="submit">Review enquiry</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-left">
+      <p>© <span id="current-year"></span> Not Normal Style</p>
+    </div>
+    <div class="footer-social" aria-label="Social media">
+      <span>Follow</span>
+      <a href="https://www.instagram.com/notnormalstyle/" target="_blank" rel="noopener noreferrer" aria-label="Not Normal Style on Instagram">Instagram · @notnormalstyle</a>
+    </div>
+    <div class="footer-right">
+      <p>Personal Image Consulting · Camila&nbsp;Rades</p>
+      <a class="footer-link" href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
