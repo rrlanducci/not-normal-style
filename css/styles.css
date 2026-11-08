@@ -2186,3 +2186,47 @@ footer {
     margin-bottom: 0 !important;
   }
 }
+
+
+/* RESPONSIVE POSITIONING HEADLINE */
+.brand-positioning-cta .positioning-title {
+  max-width: 100%;
+  margin: 0;
+  line-height: .94;
+}
+
+.brand-positioning-cta .positioning-title span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Wide desktop: one complete line. */
+@media (min-width: 1180px) {
+  .brand-positioning-cta .positioning-title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: .18em;
+    font-size: clamp(4.25rem, 5.8vw, 5.8rem) !important;
+  }
+}
+
+/* Laptop and tablet: two balanced phrase lines. */
+@media (min-width: 761px) and (max-width: 1179px) {
+  .brand-positioning-cta .positioning-title span {
+    display: block;
+  }
+}
+
+/* Phone: two protected phrase lines, never a single orphan word. */
+@media (max-width: 760px) {
+  .brand-positioning-cta .positioning-title {
+    display: block;
+    font-size: clamp(3rem, 14vw, 4.25rem) !important;
+  }
+
+  .brand-positioning-cta .positioning-title span {
+    display: block;
+    white-space: nowrap;
+  }
+}
