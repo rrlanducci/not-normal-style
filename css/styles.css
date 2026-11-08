@@ -1039,3 +1039,1150 @@ footer {
     margin-bottom: 24px;
   }
 }
+
+
+/* REFINED HOMEPAGE FLOW */
+/*
+  Colour sequence:
+  warm hero -> dark positioning -> warm philosophy -> soft-stone services
+  -> warm method -> dark consultation close.
+*/
+
+/* One hero action reads as a clear priority rather than a choice between destinations. */
+.hero-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Create a compact, consistent vertical rhythm for the main homepage chapters. */
+.homepage-philosophy,
+.homepage-method,
+.homepage-contact {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.homepage-services .section-inner {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+/* Philosophy remains on the original warm canvas. */
+.homepage-philosophy {
+  background: var(--white);
+}
+
+.homepage-philosophy .philosophy-copy p:first-child {
+  margin-top: 0;
+}
+
+.homepage-philosophy .philosophy-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy-emphasis {
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.28rem;
+  line-height: 1.45;
+}
+
+/* A subtle stone shift distinguishes Services without introducing a new brand colour. */
+.homepage-services {
+  background: #e9e6de;
+}
+
+.homepage-services .services-intro {
+  margin-bottom: 56px;
+}
+
+.homepage-services .preview-grid {
+  margin-top: 52px;
+  margin-bottom: 36px;
+}
+
+.services-guidance {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: var(--grey);
+  font-size: .88rem;
+}
+
+.services-guidance a {
+  color: var(--black);
+  text-underline-offset: 4px;
+}
+
+/* Return to the warm neutral background for the method. */
+.homepage-method {
+  background: var(--white);
+}
+
+.homepage-method .method-intro {
+  margin-top: 26px;
+}
+
+.homepage-method .process-grid {
+  margin-top: 56px;
+}
+
+/* Close the journey with the same near-black used by the Services catalogue. */
+.homepage-contact {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding-left: max(24px, calc((100% - var(--content-width)) / 2));
+  padding-right: max(24px, calc((100% - var(--content-width)) / 2));
+  color: var(--white);
+  background: var(--black);
+}
+
+.homepage-contact .eyebrow,
+.homepage-contact .section-copy {
+  color: #c9c7bf;
+}
+
+.homepage-contact .section-copy {
+  max-width: 680px;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.homepage-contact .contact-actions {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-contact .button-dark {
+  border-color: var(--white);
+  color: var(--black);
+  background: var(--white);
+}
+
+.homepage-contact .button-dark:hover,
+.homepage-contact .button-dark:focus-visible {
+  color: var(--white);
+  background: transparent;
+}
+
+@media (max-width: 760px) {
+  .homepage-philosophy,
+  .homepage-method,
+  .homepage-contact {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
+  .homepage-services .section-inner {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
+  .homepage-services .services-intro {
+    margin-bottom: 40px;
+  }
+
+  .homepage-services .preview-grid {
+    margin-top: 38px;
+    margin-bottom: 30px;
+  }
+
+  .homepage-method .process-grid {
+    margin-top: 42px;
+  }
+}
+
+
+/* HOMEPAGE DETAIL POLISH */
+/* Keep the dark positioning copy visually connected as one thought. */
+.brand-positioning-cta > div > p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.brand-positioning-cta h2 + p {
+  margin-top: 22px;
+}
+
+.brand-positioning-cta > div > p:last-of-type {
+  margin-bottom: 24px;
+}
+
+/* Strengthen supporting-copy contrast on the stone Services background. */
+.homepage-services .services-intro > p {
+  color: #56554f;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Numbers are removed from HTML; cards no longer reserve space for them. */
+.homepage-services .preview-grid a {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-services .preview-grid h3 {
+  margin: 0;
+}
+
+/* Centre the complete Services action area. */
+.homepage-services .section-inner > .button,
+.homepage-services .section-inner > .services-guidance {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.homepage-services .section-inner > .services-guidance {
+  max-width: 720px;
+  color: #56554f;
+}
+
+/* The closing section is one focused, centred invitation. */
+.homepage-contact {
+  text-align: center;
+}
+
+.homepage-contact .section-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homepage-contact .contact-actions {
+  justify-content: center;
+}
+
+/* On wide screens, use available room instead of forcing unnecessary wraps. */
+@media (min-width: 1000px) {
+  .homepage-method h2 br,
+  .homepage-services .services-intro h2 br,
+  .homepage-contact h2 br {
+    display: none;
+  }
+
+  .homepage-method h2 {
+    max-width: none;
+    white-space: nowrap;
+    font-size: clamp(4.7rem, 7.2vw, 7.2rem);
+  }
+
+  .homepage-method .method-intro {
+    max-width: 900px;
+  }
+
+  .homepage-services .services-intro h2 {
+    max-width: 760px;
+  }
+
+  .homepage-contact h2 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-positioning-cta h2 + p {
+    margin-top: 20px;
+  }
+
+  .homepage-services .section-inner > .services-guidance {
+    width: auto;
+    line-height: 1.6;
+  }
+}
+
+
+/* FINAL HOMEPAGE SPACING AND ALIGNMENT */
+/* The two positioning paragraphs should read as consecutive sentences, not separate blocks. */
+.brand-positioning-cta > div > p {
+  margin: 0;
+}
+
+.brand-positioning-cta h2 + p {
+  margin-top: 20px;
+}
+
+.brand-positioning-cta > div > p + p {
+  margin-top: 5px;
+}
+
+.brand-positioning-cta > div > p:last-of-type {
+  margin-bottom: 22px;
+}
+
+/* Centre the Services supporting copy within the right half of the introduction grid. */
+.homepage-services .services-intro > p {
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Keep the action first, then a deliberate two-line guidance message. */
+.services-guidance {
+  display: grid !important;
+  gap: 7px;
+  justify-items: center;
+  width: min(100%, 760px) !important;
+  margin-top: 22px !important;
+  line-height: 1.55;
+}
+
+.services-guidance-question,
+.services-guidance-answer {
+  display: block;
+}
+
+.services-guidance-question {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.services-guidance-answer {
+  color: #56554f;
+}
+
+/* Give the Method introduction enough desktop width to avoid a one-word orphan. */
+@media (min-width: 1000px) {
+  .homepage-method .method-intro {
+    width: 100%;
+    max-width: 1040px;
+    font-size: 1.06rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 760px) {
+  .homepage-services .services-intro > p {
+    max-width: none;
+    text-align: left;
+  }
+
+  .services-guidance {
+    gap: 6px;
+  }
+
+  .brand-positioning-cta > div > p + p {
+    margin-top: 7px;
+  }
+}
+
+
+/* TARGETED HOMEPAGE TYPOGRAPHY CORRECTION */
+/* Override earlier flex spacing: the two paragraphs should form one close copy block. */
+.brand-positioning-cta > div {
+  justify-content: flex-start;
+  gap: 0 !important;
+}
+
+.brand-positioning-cta > div > p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.brand-positioning-cta h2 + p {
+  margin-top: 18px !important;
+}
+
+.brand-positioning-cta > div > p + p {
+  margin-top: 2px !important;
+}
+
+.brand-positioning-cta > div > p:last-of-type {
+  margin-bottom: 20px !important;
+}
+
+/* Align the Philosophy title with the beginning of the right-hand copy. */
+.homepage-philosophy {
+  align-items: start !important;
+}
+
+.homepage-philosophy > div:first-child,
+.homepage-philosophy .philosophy-copy {
+  align-self: start;
+}
+
+.homepage-philosophy > div:first-child {
+  padding-top: 0;
+}
+
+.homepage-philosophy > div:first-child h2 {
+  margin-top: 20px;
+}
+
+.homepage-philosophy .philosophy-copy {
+  padding-top: 0;
+}
+
+/* Keep meaningful Method phrases intact and wrap only between them. */
+.homepage-method .method-title {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .18em;
+  row-gap: 0;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.homepage-method .method-title span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media (min-width: 1000px) {
+  .homepage-method .method-title {
+    flex-wrap: nowrap;
+    font-size: clamp(4.45rem, 6.5vw, 6.7rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .homepage-philosophy > div:first-child h2 {
+    margin-top: 16px;
+  }
+
+  .homepage-method .method-title {
+    display: block;
+    font-size: clamp(3.15rem, 15vw, 4.7rem);
+    line-height: .96;
+  }
+
+  .homepage-method .method-title span {
+    display: block;
+  }
+
+  .homepage-method .method-title span + span {
+    margin-top: 0;
+  }
+
+  .brand-positioning-cta > div > p + p {
+    margin-top: 3px !important;
+  }
+}
+
+
+/* HOMEPAGE SECTION BALANCE */
+/* Keep the two positioning ideas distinct with a subtle, deliberate gap. */
+.brand-positioning-cta > div > p + p {
+  margin-top: 10px !important;
+}
+
+/* Centre the complete left Philosophy block against the right copy column. */
+.homepage-philosophy {
+  align-items: stretch !important;
+}
+
+.homepage-philosophy > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.homepage-philosophy > div:first-child h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.homepage-philosophy .philosophy-copy {
+  align-self: start;
+}
+
+/* Make homepage service cards more compact while keeping generous touch areas. */
+.homepage-services .preview-grid a,
+.homepage-services .preview-grid a:nth-child(even) {
+  min-height: 118px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.homepage-services .preview-grid h3 {
+  font-size: clamp(1.65rem, 2.5vw, 2.3rem);
+  line-height: 1.1;
+}
+
+@media (max-width: 760px) {
+  /* On mobile the Philosophy returns to the natural reading order. */
+  .homepage-philosophy > div:first-child {
+    display: block;
+  }
+
+  .homepage-philosophy > div:first-child h2 {
+    margin-top: 16px;
+  }
+
+  .homepage-services .preview-grid a,
+  .homepage-services .preview-grid a:nth-child(even) {
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brand-positioning-cta > div > p + p {
+    margin-top: 9px !important;
+  }
+}
+
+
+/* FINAL POSITIONING PARAGRAPH GAP */
+.brand-positioning-cta > div > p + p {
+  margin-top: 16px !important;
+}
+
+@media (max-width: 760px) {
+  .brand-positioning-cta > div > p + p {
+    margin-top: 14px !important;
+  }
+}
+
+
+/* FINAL HOMEPAGE LAYOUT CORRECTIONS */
+/* Requested final breathing room between the two positioning statements. */
+.brand-positioning-cta > div > p + p {
+  margin-top: 20px !important;
+}
+
+/* Centre both Philosophy columns as complete visual blocks. */
+.homepage-philosophy {
+  align-items: center !important;
+}
+
+.homepage-philosophy > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 0;
+}
+
+.homepage-philosophy > div:first-child .eyebrow {
+  margin-top: 0;
+}
+
+.homepage-philosophy > div:first-child h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.homepage-philosophy .philosophy-copy {
+  align-self: center;
+  padding-top: 0;
+}
+
+/* Centre the Services description against the large title, not against the section top. */
+.homepage-services .services-intro {
+  align-items: center;
+}
+
+.homepage-services .services-intro > p {
+  align-self: center;
+}
+
+/* Phrase spans preserve visible spaces when the heading is rendered on one line. */
+.services-title,
+.contact-title {
+  max-width: 100%;
+}
+
+.services-title span,
+.contact-title span {
+  white-space: nowrap;
+}
+
+/* Compress Method while retaining the same hierarchy and three-step grid. */
+.homepage-method {
+  padding-top: 66px !important;
+  padding-bottom: 66px !important;
+}
+
+.homepage-method .method-intro {
+  margin-top: 18px;
+}
+
+.homepage-method .process-grid {
+  margin-top: 40px;
+}
+
+.homepage-method .process-grid article {
+  padding-top: 26px;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 1000px) {
+  .services-title,
+  .contact-title {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: .18em;
+  }
+
+  .services-title {
+    font-size: clamp(4.5rem, 6.6vw, 6.8rem);
+  }
+
+  .contact-title {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-positioning-cta > div > p + p {
+    margin-top: 18px !important;
+  }
+
+  .homepage-philosophy {
+    align-items: stretch !important;
+  }
+
+  .homepage-philosophy > div:first-child,
+  .homepage-philosophy .philosophy-copy {
+    align-self: stretch;
+  }
+
+  .homepage-services .services-intro {
+    align-items: stretch;
+  }
+
+  .services-title span,
+  .contact-title span {
+    display: block;
+  }
+
+  .services-title span + span,
+  .contact-title span + span {
+    margin-top: 0;
+  }
+
+  .homepage-method {
+    padding-top: 58px !important;
+    padding-bottom: 58px !important;
+  }
+
+  .homepage-method .process-grid {
+    margin-top: 34px;
+  }
+}
+
+
+/* STRUCTURAL HOMEPAGE REPAIR */
+/* Explicit copy group: a real, stable gap between the two statements. */
+.brand-positioning-cta .positioning-copy {
+  display: grid !important;
+  gap: 24px !important;
+  width: 100%;
+  max-width: 720px;
+  margin: 20px auto 22px;
+}
+
+.brand-positioning-cta .positioning-copy > p,
+.brand-positioning-cta .positioning-copy > p + p {
+  margin: 0 !important;
+}
+
+/* Philosophy: centre the left block against the complete right block. */
+.homepage-philosophy {
+  align-items: center !important;
+}
+
+.homepage-philosophy > div:first-child,
+.homepage-philosophy .philosophy-copy {
+  align-self: center !important;
+}
+
+.homepage-philosophy > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.homepage-philosophy > div:first-child .eyebrow {
+  margin: 0 0 20px;
+}
+
+.homepage-philosophy .philosophy-title {
+  display: block !important;
+  margin: 0;
+  max-width: 100%;
+  font-size: clamp(3.7rem, 5.7vw, 6rem);
+  line-height: .96;
+  white-space: normal;
+}
+
+.homepage-philosophy .philosophy-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+.homepage-philosophy .philosophy-title span + span {
+  margin-top: .08em;
+}
+
+/* Services: restore a safe two-column grid with a deliberately two-line title. */
+.homepage-services .services-intro {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
+  column-gap: 72px;
+  align-items: center !important;
+}
+
+.homepage-services .services-title {
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0;
+  font-size: clamp(4.2rem, 6.1vw, 6.25rem);
+  line-height: .94;
+  white-space: normal !important;
+}
+
+.homepage-services .services-title span {
+  display: block !important;
+  white-space: nowrap;
+}
+
+.homepage-services .services-title span + span {
+  margin-top: .02em;
+}
+
+.homepage-services .services-intro > p {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
+}
+
+@media (max-width: 1100px) and (min-width: 761px) {
+  .homepage-philosophy .philosophy-title {
+    font-size: clamp(3.2rem, 5.2vw, 4.7rem);
+  }
+
+  .homepage-services .services-intro {
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+    column-gap: 44px;
+  }
+
+  .homepage-services .services-title {
+    font-size: clamp(3.6rem, 5.5vw, 5rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-positioning-cta .positioning-copy {
+    gap: 20px !important;
+    margin-top: 18px;
+  }
+
+  .homepage-philosophy {
+    align-items: stretch !important;
+  }
+
+  .homepage-philosophy > div:first-child,
+  .homepage-philosophy .philosophy-copy {
+    align-self: stretch !important;
+  }
+
+  .homepage-philosophy .philosophy-title {
+    font-size: clamp(3.1rem, 14vw, 4.5rem);
+  }
+
+  .homepage-philosophy .philosophy-title span {
+    white-space: normal;
+  }
+
+  .homepage-services .services-intro {
+    display: block !important;
+  }
+
+  .homepage-services .services-title {
+    font-size: clamp(3.1rem, 14vw, 4.5rem);
+  }
+
+  .homepage-services .services-title span {
+    white-space: normal;
+  }
+
+  .homepage-services .services-intro > p {
+    max-width: none;
+    margin-top: 28px;
+    text-align: left;
+  }
+}
+
+
+/* PRECISE PHILOSOPHY BLOCK CENTRING */
+@media (min-width: 761px) {
+  /* Both columns are centred by their real content height. */
+  .section.split-section.homepage-philosophy {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.45fr) minmax(360px, .55fr) !important;
+    column-gap: 88px !important;
+    align-items: center !important;
+  }
+
+  /* Remove inherited vertical distribution from the left block. */
+  .section.split-section.homepage-philosophy > div:first-child {
+    display: block !important;
+    align-self: center !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .section.split-section.homepage-philosophy > div:first-child .eyebrow {
+    margin: 0 0 22px !important;
+    padding: 0 !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-title {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Remove inherited offsets from the right block as well. */
+  .section.split-section.homepage-philosophy .philosophy-copy {
+    display: block !important;
+    align-self: center !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-copy > :first-child {
+    margin-top: 0 !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-copy > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Preserve the natural stacked reading order on phones. */
+  .section.split-section.homepage-philosophy > div:first-child,
+  .section.split-section.homepage-philosophy .philosophy-copy {
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .section.split-section.homepage-philosophy > div:first-child .eyebrow {
+    margin: 0 0 18px !important;
+  }
+}
+
+
+/* DEFINITIVE MOBILE HOMEPAGE REPAIR */
+@media (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main,
+  main > section,
+  .section,
+  .section-inner,
+  .hero,
+  .hero-content,
+  .brand-positioning-cta,
+  .brand-positioning-cta > div,
+  .homepage-philosophy,
+  .homepage-services,
+  .homepage-services .services-intro,
+  .homepage-method,
+  .homepage-contact {
+    box-sizing: border-box;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Hero: retain two intentional ideas without splitting 'Your rules.' */
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(4.15rem, 19vw, 5.65rem) !important;
+    line-height: .94;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero h1 br {
+    display: block;
+  }
+
+  .hero .introduction {
+    max-width: 100%;
+  }
+
+  /* Dark positioning section. */
+  .brand-positioning-cta h2 {
+    max-width: 100%;
+    font-size: clamp(3.25rem, 15vw, 4.5rem) !important;
+    line-height: .96;
+  }
+
+  .brand-positioning-cta .positioning-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Philosophy: natural stacked mobile layout with no forced phrase width. */
+  .section.split-section.homepage-philosophy {
+    display: block !important;
+  }
+
+  .homepage-philosophy .philosophy-title {
+    display: block !important;
+    max-width: 100%;
+    font-size: clamp(3.25rem, 15vw, 4.6rem) !important;
+    line-height: .96;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .homepage-philosophy .philosophy-title span {
+    display: block;
+    max-width: 100%;
+    white-space: normal !important;
+  }
+
+  /* Services: remove desktop grid constraints and let text wrap cleanly. */
+  .homepage-services .services-intro {
+    display: block !important;
+    width: 100%;
+  }
+
+  .homepage-services .services-title {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(3.35rem, 15.5vw, 4.65rem) !important;
+    line-height: .94;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .homepage-services .services-title span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .homepage-services .services-title span + span::before {
+    content: " ";
+  }
+
+  .homepage-services .services-intro > p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 26px;
+    text-align: left;
+  }
+
+  /* Method: each meaningful phrase occupies one line where possible. */
+  .homepage-method .method-title {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(3.15rem, 14.5vw, 4.45rem) !important;
+    line-height: .96;
+  }
+
+  .homepage-method .method-title span {
+    display: block;
+    max-width: 100%;
+    white-space: normal !important;
+  }
+
+  .homepage-method .method-intro {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Final consultation: allow balanced wrapping inside the viewport. */
+  .homepage-contact {
+    width: 100%;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .homepage-contact .contact-title {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(3.3rem, 15vw, 4.5rem) !important;
+    line-height: .95;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .homepage-contact .contact-title span {
+    display: block;
+    max-width: 100%;
+    white-space: normal !important;
+  }
+
+  .homepage-contact .section-copy,
+  .homepage-contact .contact-actions {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Ensure grid and card descendants cannot widen the viewport. */
+  .preview-grid,
+  .preview-grid a,
+  .process-grid,
+  .process-grid article,
+  footer,
+  nav,
+  .submenu {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* FINAL MOBILE SPACING POLISH */
+@media (max-width: 760px) {
+  /* Give the Philosophy headline and copy distinct breathing room. */
+  .homepage-philosophy .philosophy-copy {
+    margin-top: 38px !important;
+  }
+
+  /* Keep each Method phrase intact: From identity / to expression. */
+  .homepage-method .method-title {
+    font-size: clamp(3rem, 13.5vw, 4.2rem) !important;
+    line-height: .96;
+  }
+
+  .homepage-method .method-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .homepage-method .method-title span + span {
+    margin-top: 0;
+  }
+
+  .homepage-method .method-intro {
+    margin-top: 24px !important;
+  }
+
+  /* Compress the Method cards without reducing readability or touch comfort. */
+  .homepage-method .process-grid {
+    display: grid;
+    gap: 0 !important;
+    margin-top: 30px !important;
+  }
+
+  .homepage-method .process-grid article {
+    min-height: 0 !important;
+    padding-top: 28px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .homepage-method .process-grid article + article {
+    margin-top: 0 !important;
+  }
+
+  .homepage-method .process-grid article span {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .homepage-method .process-grid article h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  .homepage-method .process-grid article p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Slightly compact the same card area on desktop while preserving the 3-column layout. */
+@media (min-width: 761px) {
+  .homepage-method .process-grid article {
+    min-height: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+}
+
+
+/* FINAL MOBILE PHILOSOPHY GAP */
+@media (max-width: 760px) {
+  .section.split-section.homepage-philosophy .philosophy-copy {
+    margin-top: 48px !important;
+  }
+}
+
+
+/* IPAD MINI PHILOSOPHY REPAIR */
+/*
+  iPad Mini portrait is 768 px wide, just above the 760 px phone breakpoint.
+  Stack Philosophy at tablet widths so the large title cannot overlap the copy.
+*/
+@media (min-width: 761px) and (max-width: 900px) {
+  .section.split-section.homepage-philosophy {
+    display: block !important;
+    width: min(100% - 64px, var(--content-width));
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  .section.split-section.homepage-philosophy > div:first-child,
+  .section.split-section.homepage-philosophy .philosophy-copy {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .section.split-section.homepage-philosophy > div:first-child .eyebrow {
+    margin: 0 0 20px !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-title {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    font-size: clamp(4.1rem, 9vw, 5.35rem) !important;
+    line-height: .96;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-title span {
+    display: block;
+    white-space: normal !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-copy {
+    margin-top: 48px !important;
+    max-width: 620px !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-copy > :first-child {
+    margin-top: 0 !important;
+  }
+
+  .section.split-section.homepage-philosophy .philosophy-copy > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
