@@ -2230,3 +2230,64 @@ footer {
     white-space: nowrap;
   }
 }
+
+/* LARGE TABLET POSITIONING HEADLINE */
+/* 900 px and wider: use one complete line, scaled to the available width. */
+@media (min-width: 900px) {
+  .brand-positioning-cta .positioning-title {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    gap: .18em;
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(3.35rem, 5.6vw, 5.8rem) !important;
+    white-space: nowrap;
+  }
+
+  .brand-positioning-cta .positioning-title span {
+    display: inline-block !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Below 900 px: retain two protected phrase lines. */
+@media (max-width: 899px) {
+  .brand-positioning-cta .positioning-title {
+    display: block !important;
+    white-space: normal;
+  }
+
+  .brand-positioning-cta .positioning-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+}
+
+
+/* IPAD MINI HERO BALANCE */
+@media (min-width: 761px) and (max-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, .92fr);
+    column-gap: 42px;
+  }
+
+  .hero-content {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(4.1rem, 8.4vw, 4.65rem) !important;
+    line-height: .94;
+  }
+
+  .hero h1 br {
+    display: block;
+  }
+
+  .hero-image {
+    min-width: 0;
+  }
+}
