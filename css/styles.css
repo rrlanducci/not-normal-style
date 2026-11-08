@@ -2291,3 +2291,172 @@ footer {
     min-width: 0;
   }
 }
+
+
+/* IPAD MINI ONE-LINE POSITIONING TITLE */
+/* iPad Mini portrait is 768 px. Use one scaled line from this width upwards. */
+@media (min-width: 768px) {
+  .brand-positioning-cta .positioning-title {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    gap: .17em;
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.75rem, 5.25vw, 5.8rem) !important;
+    line-height: .94;
+    white-space: nowrap !important;
+  }
+
+  .brand-positioning-cta .positioning-title span {
+    display: inline-block !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Below iPad Mini width, retain two balanced protected phrases. */
+@media (max-width: 767px) {
+  .brand-positioning-cta .positioning-title {
+    display: block !important;
+    white-space: normal !important;
+  }
+
+  .brand-positioning-cta .positioning-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+}
+
+
+/* RESPONSIVE DESKTOP COPY WIDTH */
+/* Wide screens: let supporting sentences use the space that is available. */
+@media (min-width: 1180px) {
+  .brand-positioning-cta .positioning-copy {
+    width: min(100%, 1180px);
+    max-width: 1180px;
+  }
+
+  .brand-positioning-cta .positioning-copy > p {
+    width: 100%;
+    max-width: none;
+    text-wrap: pretty;
+  }
+
+  .homepage-contact .section-copy {
+    width: min(100%, 1120px);
+    max-width: 1120px;
+    text-wrap: pretty;
+  }
+}
+
+/* Standard desktop and large tablets: retain a comfortable intermediate measure. */
+@media (min-width: 900px) and (max-width: 1179px) {
+  .brand-positioning-cta .positioning-copy {
+    width: min(100%, 920px);
+    max-width: 920px;
+  }
+
+  .homepage-contact .section-copy {
+    width: min(100%, 880px);
+    max-width: 880px;
+  }
+}
+
+/* Mobile and smaller tablets keep the established readable wrapping. */
+@media (max-width: 899px) {
+  .brand-positioning-cta .positioning-copy,
+  .homepage-contact .section-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* DARK SECTION COPY RHYTHM */
+.homepage-contact .section-copy span {
+  display: inline;
+}
+
+/* Wide desktop: longer lines and one complete consultation sentence per line. */
+@media (min-width: 1180px) {
+  .brand-positioning-cta .positioning-copy {
+    width: min(100%, 1320px) !important;
+    max-width: 1320px !important;
+  }
+
+  .brand-positioning-cta .positioning-copy > p {
+    width: 100%;
+    max-width: none !important;
+    text-align: center;
+  }
+
+  .homepage-contact .section-copy {
+    width: min(100%, 1320px) !important;
+    max-width: 1320px !important;
+  }
+
+  .homepage-contact .section-copy span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .homepage-contact .section-copy span + span {
+    margin-top: 6px;
+  }
+}
+
+/* Regular desktop: expanded measure, with natural wrapping where needed. */
+@media (min-width: 900px) and (max-width: 1179px) {
+  .brand-positioning-cta .positioning-copy {
+    width: min(100%, 1020px) !important;
+    max-width: 1020px !important;
+  }
+
+  .homepage-contact .section-copy {
+    width: min(100%, 980px) !important;
+    max-width: 980px !important;
+  }
+
+  .homepage-contact .section-copy span {
+    display: block;
+  }
+
+  .homepage-contact .section-copy span + span {
+    margin-top: 5px;
+  }
+}
+
+/* Tablet and phone: keep the copy fluid within the viewport. */
+@media (max-width: 899px) {
+  .brand-positioning-cta .positioning-copy,
+  .homepage-contact .section-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .homepage-contact .section-copy span {
+    display: inline;
+    white-space: normal;
+  }
+
+  .homepage-contact .section-copy span + span::before {
+    content: " ";
+  }
+}
+
+
+/* MOBILE CONSULTATION SENTENCE SPLIT */
+@media (max-width: 899px) {
+  .homepage-contact .section-copy span {
+    display: block !important;
+    white-space: normal !important;
+  }
+
+  .homepage-contact .section-copy span + span {
+    margin-top: 12px;
+  }
+
+  .homepage-contact .section-copy span + span::before {
+    content: none !important;
+  }
+}
