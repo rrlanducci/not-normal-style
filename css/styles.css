@@ -2460,3 +2460,143 @@ footer {
     content: none !important;
   }
 }
+
+
+/* WIDE DESKTOP SERVICE LABEL FIT */
+/* Wide desktop: all six category names fit on one line inside the two-column grid. */
+@media (min-width: 1280px) {
+  .homepage-services .preview-grid h3 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: clamp(1.8rem, 2.35vw, 2.85rem);
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  .homepage-services .preview-grid a {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 28px;
+  }
+
+  .homepage-services .preview-grid a:nth-child(even) {
+    padding-left: 28px;
+    padding-right: 0;
+  }
+}
+
+/* Laptop, tablet and phone: allow natural wrapping to prevent overflow. */
+@media (max-width: 1279px) {
+  .homepage-services .preview-grid h3 {
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}
+
+
+/* HOMEPAGE SPECIAL EXPERIENCES WRAP */
+.homepage-services .shopping-experiences-title span {
+  white-space: nowrap;
+}
+
+/* Wide desktop: the complete category remains on one line. */
+@media (min-width: 1280px) {
+  .homepage-services .shopping-experiences-title span {
+    display: inline;
+  }
+
+  .homepage-services .shopping-experiences-title span + span::before {
+    content: " ";
+  }
+}
+
+/* Laptop, tablet and mobile: use two balanced phrase lines. */
+@media (max-width: 1279px) {
+  .homepage-services .shopping-experiences-title span {
+    display: block;
+  }
+
+  .homepage-services .shopping-experiences-title span + span {
+    margin-top: .06em;
+  }
+}
+
+
+/* RESTORE SPECIAL EXPERIENCES TYPOGRAPHY */
+/* Override the generic preview-card span rules that were intended for numbers. */
+.homepage-services .preview-grid .shopping-experiences-title,
+.homepage-services .preview-grid .shopping-experiences-title span {
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-style: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  line-height: inherit !important;
+  text-transform: none !important;
+}
+
+.homepage-services .preview-grid .shopping-experiences-title {
+  width: 100%;
+  margin: 0;
+}
+
+.homepage-services .preview-grid .shopping-experiences-title span {
+  padding: 0 !important;
+}
+
+/* Wide desktop: one line, matching the other card titles. */
+@media (min-width: 1280px) {
+  .homepage-services .preview-grid .shopping-experiences-title span {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+
+  .homepage-services .preview-grid .shopping-experiences-title span + span::before {
+    content: " ";
+  }
+}
+
+/* Narrower screens: Shopping & / Special Experiences, same original font. */
+@media (max-width: 1279px) {
+  .homepage-services .preview-grid .shopping-experiences-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .homepage-services .preview-grid .shopping-experiences-title span + span {
+    margin-top: .06em;
+  }
+
+  .homepage-services .preview-grid .shopping-experiences-title span + span::before {
+    content: none;
+  }
+}
+
+/* NORMAL SHOPPING CARD HEADING */
+/* No nested spans: the heading inherits the exact same typography as every other card. */
+.homepage-services .preview-grid h3 .shopping-mobile-break {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .homepage-services .preview-grid h3 .shopping-mobile-break {
+    display: block;
+  }
+}
+
+
+/* RESPONSIVE SERVICE CARD PHRASE BREAKS */
+/* Wide desktop: hide the break; the following non-breaking space remains visible. */
+.homepage-services .preview-grid h3 .service-card-break {
+  display: none;
+}
+
+/* Laptop, tablet and mobile: use two balanced phrase lines. */
+@media (max-width: 1279px) {
+  .homepage-services .preview-grid h3 .service-card-break {
+    display: block;
+  }
+}
