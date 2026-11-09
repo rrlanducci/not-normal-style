@@ -4174,3 +4174,514 @@ footer {
     margin: 46px auto 0 !important;
   }
 }
+
+
+/* ABOUT HEADLINE RHYTHM */
+/* Scoped by About chapter IDs to avoid affecting the homepage Philosophy. */
+#experience .about-experience-title,
+#why-not-normal .about-fit-title,
+#philosophy.about-chapter .about-philosophy-title {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  line-height: .98;
+}
+
+#experience .about-experience-title span,
+#why-not-normal .about-fit-title span,
+#philosophy.about-chapter .about-philosophy-title span {
+  display: block;
+}
+
+#experience .about-experience-title span + span,
+#philosophy.about-chapter .about-philosophy-title span + span {
+  margin-top: .02em;
+}
+
+@media (min-width: 1100px) {
+  /* Four deliberate, economical lines. */
+  #experience .about-experience-title span {
+    white-space: nowrap !important;
+  }
+
+  #experience .about-experience-title {
+    font-size: clamp(3.75rem, 4.45vw, 5.4rem) !important;
+  }
+
+  /* One complete desktop line. */
+  #why-not-normal .about-fit-title {
+    width: max-content !important;
+    max-width: none !important;
+    font-size: clamp(3.65rem, 4.5vw, 5.25rem) !important;
+    white-space: nowrap !important;
+  }
+
+  #why-not-normal .about-fit-title span {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+
+  /* Two intentional lines only. */
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(3.8rem, 4.6vw, 5.5rem) !important;
+  }
+
+  #philosophy.about-chapter .about-philosophy-title span {
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(2.9rem, 5vw, 4.2rem) !important;
+  }
+
+  #experience .about-experience-title span,
+  #why-not-normal .about-fit-title span,
+  #philosophy.about-chapter .about-philosophy-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience .about-experience-title span,
+  #why-not-normal .about-fit-title span,
+  #philosophy.about-chapter .about-philosophy-title span {
+    white-space: normal !important;
+  }
+}
+
+
+/* ABOUT EXPERIENCE THREE-LINE HEADING */
+#experience .about-experience-title {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  line-height: .98;
+}
+
+#experience .about-experience-title span {
+  display: block;
+}
+
+#experience .about-experience-title span + span {
+  margin-top: .02em;
+}
+
+@media (min-width: 1100px) {
+  #experience .about-experience-title {
+    font-size: clamp(3.65rem, 4.3vw, 5.2rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 1099px) {
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+
+/* ABOUT EXPERIENCE FIT AND CENTRED CLOSING */
+/* Give Chapter 02 enough headline width while keeping a readable copy column. */
+@media (min-width: 1100px) {
+  #experience.about-chapter,
+  #experience {
+    display: grid !important;
+    grid-template-columns: 72px minmax(560px, 1.15fr) minmax(380px, .85fr) !important;
+    column-gap: 48px !important;
+    align-items: start !important;
+  }
+
+  #experience > * {
+    min-width: 0 !important;
+  }
+
+  #experience .about-experience-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(3.25rem, 3.75vw, 4.55rem) !important;
+    line-height: .98 !important;
+  }
+
+  #experience .about-experience-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  #experience .about-experience-title span + span {
+    margin-top: .015em;
+  }
+
+  #experience .chapter-copy {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin: 0 !important;
+    justify-self: end !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #experience .about-experience-title {
+    font-size: clamp(2.8rem, 4.8vw, 3.9rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+/* Centre everything after the closing eyebrow as one coherent block. */
+.about-closing.about-closing-centred {
+  text-align: center !important;
+}
+
+.about-closing.about-closing-centred > .eyebrow {
+  text-align: left !important;
+}
+
+.about-closing.about-closing-centred h2,
+.about-closing.about-closing-centred .about-closing-copy,
+.about-closing.about-closing-centred > p:not(.eyebrow) {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  text-align: center !important;
+}
+
+.about-closing.about-closing-centred .about-closing-actions {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.about-closing.about-closing-centred .button {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+@media (min-width: 1180px) {
+  .about-closing.about-closing-centred .about-closing-copy {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1179px) {
+  .about-closing.about-closing-centred .about-closing-copy {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+}
+
+
+/* MATCH ABOUT EXPERIENCE TYPOGRAPHY */
+/* Chapter 02 now uses the same typography as every other About chapter h2. */
+#experience .about-experience-title {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: -.035em !important;
+  line-height: .98 !important;
+}
+
+@media (min-width: 1100px) {
+  #experience .about-experience-title {
+    font-size: clamp(3.8rem, 4.55vw, 5.6rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #experience .about-experience-title {
+    font-size: clamp(2.9rem, 5vw, 4.15rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience .about-experience-title {
+    font-size: clamp(2.75rem, 13vw, 4rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+
+/* FINAL ABOUT EXPERIENCE REALIGNMENT */
+/* Chapter 02 uses exactly the same desktop guides as Chapters 01, 03 and 04. */
+@media (min-width: 1100px) {
+  #experience.about-chapter,
+  #experience {
+    display: grid !important;
+    grid-template-columns: 72px minmax(0, 1.05fr) minmax(390px, .95fr) !important;
+    column-gap: 54px !important;
+    align-items: start !important;
+  }
+
+  #experience > * {
+    min-width: 0 !important;
+  }
+
+  #experience .chapter-number {
+    grid-column: 1 !important;
+    margin: 0 !important;
+    justify-self: start !important;
+  }
+
+  #experience .chapter-heading,
+  #experience > div:nth-child(2) {
+    grid-column: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    align-self: start !important;
+  }
+
+  #experience .chapter-copy {
+    grid-column: 3 !important;
+    width: 100% !important;
+    max-width: 590px !important;
+    margin: 0 !important;
+    justify-self: start !important;
+    align-self: start !important;
+  }
+
+  /* Same typography scale as the other chapter headlines. */
+  #experience .about-experience-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(3.8rem, 4.55vw, 5.6rem) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: -.035em !important;
+    line-height: .98 !important;
+  }
+
+  /* Preserve the requested three phrases without changing the shared grid. */
+  #experience .about-experience-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  #experience .about-experience-title span + span {
+    margin-top: .02em;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #experience.about-chapter,
+  #experience {
+    display: grid !important;
+    grid-template-columns: 56px minmax(0, .95fr) minmax(300px, 1.05fr) !important;
+    column-gap: 34px !important;
+    align-items: start !important;
+  }
+
+  #experience > * {
+    min-width: 0 !important;
+  }
+
+  #experience .chapter-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  #experience .about-experience-title {
+    font-size: clamp(2.9rem, 5vw, 4.15rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience.about-chapter,
+  #experience {
+    display: block !important;
+  }
+
+  #experience .chapter-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+
+/* EXACT ABOUT EXPERIENCE LINES */
+#experience .about-experience-title {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: -.035em !important;
+  line-height: .98 !important;
+}
+
+#experience .about-experience-title span {
+  display: block !important;
+}
+
+#experience .about-experience-title span + span {
+  margin-top: .02em;
+}
+
+@media (min-width: 1100px) {
+  #experience .about-experience-title {
+    font-size: clamp(3.35rem, 3.85vw, 4.7rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 1099px) {
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+
+/* UNIFIED ABOUT CHAPTER HEADING SIZE */
+/* Use Chapter 02's approved typography for all four numbered About chapters. */
+#where-it-began h2,
+#experience h2,
+#why-not-normal h2,
+#philosophy.about-chapter h2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: -.035em !important;
+  line-height: .98 !important;
+}
+
+@media (min-width: 1100px) {
+  #where-it-began h2,
+  #experience h2,
+  #why-not-normal h2,
+  #philosophy.about-chapter h2 {
+    font-size: clamp(3.35rem, 3.85vw, 4.7rem) !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #where-it-began h2,
+  #experience h2,
+  #why-not-normal h2,
+  #philosophy.about-chapter h2 {
+    font-size: clamp(2.8rem, 4.8vw, 3.9rem) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #where-it-began h2,
+  #experience h2,
+  #why-not-normal h2,
+  #philosophy.about-chapter h2 {
+    font-size: clamp(2.75rem, 13vw, 4rem) !important;
+  }
+}
+
+
+/* ABOUT STORY TWO-LINE HEADING */
+#where-it-began .about-story-title span {
+  display: block;
+}
+
+#where-it-began .about-story-title span + span {
+  margin-top: .02em;
+}
+
+@media (min-width: 1100px) {
+  #where-it-began .about-story-title span {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1099px) {
+  #where-it-began .about-story-title span {
+    white-space: normal;
+  }
+}
+
+
+/* FINAL EQUAL ABOUT HEADING TYPOGRAPHY */
+/* High-specificity selectors override earlier chapter-specific size rules. */
+#where-it-began .about-story-title,
+#experience .about-experience-title,
+#why-not-normal .about-fit-title,
+#philosophy.about-chapter .about-philosophy-title {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  letter-spacing: -.035em !important;
+  line-height: .98 !important;
+}
+
+@media (min-width: 1100px) {
+  #where-it-began .about-story-title,
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(3.35rem, 3.85vw, 4.7rem) !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #where-it-began .about-story-title,
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(2.8rem, 4.8vw, 3.9rem) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #where-it-began .about-story-title,
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(2.75rem, 13vw, 4rem) !important;
+  }
+}
