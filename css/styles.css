@@ -2600,3 +2600,1577 @@ footer {
     display: block;
   }
 }
+
+
+/* SERVICES HERO AND CATEGORY REFINEMENT */
+/* Wide desktop: use the available width for the complete introductory sentence. */
+@media (min-width: 1180px) {
+  .page-hero > p:last-child {
+    width: 100%;
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
+/* Standard desktop and tablet: widen the measure but allow natural wrapping. */
+@media (min-width: 761px) and (max-width: 1179px) {
+  .page-hero > p:last-child {
+    width: 100%;
+    max-width: 900px;
+    white-space: normal;
+    text-wrap: pretty;
+  }
+}
+
+/* Mobile: retain a fluid, readable line length inside the viewport. */
+@media (max-width: 760px) {
+  .page-hero > p:last-child {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    text-wrap: pretty;
+  }
+}
+
+/* Category numbers were removed; headings now use the full heading column. */
+.service-group-heading h3 {
+  margin-top: 0;
+}
+
+
+/* NATURAL SERVICES INCLUDES FLOW */
+/* Read every Includes list from top to bottom instead of alternating columns. */
+.services-section .service-content ul {
+  display: block !important;
+  grid-template-columns: none !important;
+  columns: auto !important;
+  column-count: auto !important;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 22px;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+}
+
+.services-section .service-content li {
+  display: list-item !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 0 14px;
+  break-inside: avoid;
+}
+
+.services-section .service-content li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .services-section .service-content ul {
+    max-width: 100%;
+    margin-top: 18px;
+  }
+
+  .services-section .service-content li {
+    margin-bottom: 12px;
+  }
+}
+
+
+/* COMPACT SERVICES PAGE HERO */
+/* Keep the shared content width and left edge; reduce only vertical space. */
+.services-page-hero {
+  padding-top: 82px;
+  padding-bottom: 78px;
+}
+
+.services-page-hero .eyebrow {
+  margin-top: 0;
+}
+
+.services-page-hero h1 {
+  margin-top: 42px;
+  margin-bottom: 38px;
+}
+
+.services-page-hero > p:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1180px) {
+  .services-page-hero {
+    padding-top: 86px;
+    padding-bottom: 82px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1179px) {
+  .services-page-hero {
+    padding-top: 74px;
+    padding-bottom: 72px;
+  }
+
+  .services-page-hero h1 {
+    margin-top: 34px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-page-hero {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .services-page-hero h1 {
+    margin-top: 28px;
+    margin-bottom: 26px;
+  }
+}
+
+
+/* SHARED INNER PAGE STARTING HEIGHT */
+/*
+  Align the first visible text on Services, About, Consultation and Privacy.
+  Horizontal widths and each page's individual composition remain unchanged.
+*/
+.page-hero,
+.about-hero,
+.consultation-hero,
+.legal-page {
+  padding-top: 82px !important;
+}
+
+.page-hero > .eyebrow:first-child,
+.about-hero > div:first-child > .eyebrow:first-child,
+.consultation-hero > .eyebrow:first-child,
+.legal-hero > .eyebrow:first-child {
+  margin-top: 0 !important;
+}
+
+/* Services keeps its compact bottom rhythm while sharing the common top edge. */
+.services-page-hero {
+  padding-bottom: 78px !important;
+}
+
+@media (min-width: 1180px) {
+  .page-hero,
+  .about-hero,
+  .consultation-hero,
+  .legal-page {
+    padding-top: 86px !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1179px) {
+  .page-hero,
+  .about-hero,
+  .consultation-hero,
+  .legal-page {
+    padding-top: 74px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-hero,
+  .about-hero,
+  .consultation-hero,
+  .legal-page {
+    padding-top: 58px !important;
+  }
+
+  .services-page-hero {
+    padding-bottom: 58px !important;
+  }
+}
+
+
+/* ALIGN HOMEPAGE START WITH INNER PAGES */
+/*
+  Match the first homepage eyebrow to the shared inner-page starting height.
+  Preserve the existing two-column composition and portrait dimensions.
+*/
+@media (min-width: 1180px) {
+  .hero {
+    align-items: start !important;
+    padding-top: 86px !important;
+  }
+
+  .hero-content,
+  .hero-image {
+    align-self: start;
+  }
+
+  .hero-content > .eyebrow:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1179px) {
+  .hero {
+    align-items: start !important;
+    padding-top: 74px !important;
+  }
+
+  .hero-content,
+  .hero-image {
+    align-self: start;
+  }
+
+  .hero-content > .eyebrow:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+/* iPad Mini and tablet widths keep the approved responsive hero proportions. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .hero {
+    align-items: start !important;
+    padding-top: 74px !important;
+  }
+
+  .hero-content,
+  .hero-image {
+    align-self: start;
+  }
+
+  .hero-content > .eyebrow:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 58px !important;
+  }
+
+  .hero-content > .eyebrow:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* SERVICE CATEGORY HEADINGS BY ID */
+.service-group-heading h3[id] {
+  width: 100%;
+  margin-top: 0;
+  line-height: .96;
+}
+
+.service-group-heading h3[id] > span {
+  display: block;
+  white-space: nowrap;
+}
+
+.service-group-heading h3[id] > span + span {
+  margin-top: .04em;
+}
+
+@media (min-width: 1100px) {
+  .service-group {
+    grid-template-columns: minmax(470px, .9fr) minmax(0, 1.5fr) !important;
+    column-gap: 72px !important;
+  }
+
+  .service-group-heading {
+    min-width: 0;
+  }
+
+  .service-group-heading h3 {
+    width: 100%;
+    max-width: 660px;
+    font-size: clamp(4rem, 4.8vw, 5.6rem);
+    line-height: .96;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  .service-group {
+    grid-template-columns: minmax(320px, .9fr) minmax(0, 1.4fr) !important;
+    column-gap: 44px !important;
+  }
+
+  .service-group-heading h3 {
+    max-width: 100%;
+    font-size: clamp(3rem, 5.4vw, 4.25rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .service-group-heading h3[id] > span {
+    white-space: normal;
+  }
+}
+
+
+/* SAFE SERVICE CATEGORY HEADING SIZE */
+/* Keep category headings distinct without allowing them into the service column. */
+.service-group-heading {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.service-group-heading h3,
+.service-group-heading h3[id] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.02;
+  overflow: hidden;
+}
+
+.service-group-heading h3[id] > span {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.service-group-heading h3[id] > span + span {
+  margin-top: .04em;
+}
+
+@media (min-width: 1200px) {
+  .service-group {
+    grid-template-columns: minmax(360px, 38%) minmax(0, 62%) !important;
+    column-gap: 64px !important;
+  }
+
+  .service-group-heading h3,
+  .service-group-heading h3[id] {
+    font-size: clamp(3.25rem, 3.8vw, 4.35rem) !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .service-group {
+    grid-template-columns: minmax(300px, 38%) minmax(0, 62%) !important;
+    column-gap: 48px !important;
+  }
+
+  .service-group-heading h3,
+  .service-group-heading h3[id] {
+    font-size: clamp(2.75rem, 4.2vw, 3.65rem) !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .service-group {
+    grid-template-columns: minmax(260px, 40%) minmax(0, 60%) !important;
+    column-gap: 36px !important;
+  }
+
+  .service-group-heading h3,
+  .service-group-heading h3[id] {
+    font-size: clamp(2.35rem, 4.8vw, 3.1rem) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .service-group-heading {
+    overflow: visible;
+  }
+
+  .service-group-heading h3,
+  .service-group-heading h3[id] {
+    overflow: visible;
+    font-size: clamp(2.75rem, 13vw, 4rem) !important;
+  }
+
+  .service-group-heading h3[id] > span {
+    white-space: normal;
+  }
+}
+
+
+/* REFINED ABOUT PAGE LAYOUT */
+/* Hero phrases: never leave 'with' or 'identity.' isolated. */
+.about-identity-title span,
+.about-experience-title span,
+.about-fit-title span {
+  display: block;
+}
+
+.about-identity-title span,
+.about-experience-title span:last-child,
+.about-fit-title span {
+  white-space: nowrap;
+}
+
+/* Position the portrait beside the text and the quotation beneath both columns. */
+.about-meet {
+  align-items: start;
+}
+
+.about-meet > div:first-child {
+  grid-column: 1;
+}
+
+.about-meet .about-portrait {
+  grid-column: 2;
+}
+
+.about-meet > .about-quote {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin: 68px 0 0;
+  padding: 36px 0 0;
+  border-left: 0;
+  border-top: 1px solid var(--line);
+}
+
+.about-meet > .about-quote p {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(2.2rem, 3.5vw, 4.6rem);
+  line-height: 1.12;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.about-meet > .about-quote cite {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Maintain intentional phrase grouping in chapter headlines. */
+.about-experience-title,
+.about-fit-title {
+  max-width: 100%;
+}
+
+.about-experience-title span:last-child,
+.about-fit-title span + span {
+  margin-top: .04em;
+}
+
+/* Closing: use the established near-black and warm-white brand palette. */
+.about-closing {
+  color: var(--white);
+  background: var(--black);
+}
+
+.about-closing .eyebrow,
+.about-closing > p {
+  color: #c9c7bf;
+}
+
+.about-closing h2,
+.about-closing .text-link-light {
+  color: var(--white);
+}
+
+.about-closing .button-light {
+  border-color: var(--white);
+  color: var(--black);
+  background: var(--white);
+}
+
+.about-closing .button-light:hover,
+.about-closing .button-light:focus-visible {
+  color: var(--white);
+  background: transparent;
+}
+
+@media (max-width: 900px) {
+  .about-meet > .about-quote {
+    margin-top: 48px;
+    padding-top: 30px;
+  }
+
+  .about-meet > .about-quote p {
+    font-size: clamp(2rem, 5vw, 3.4rem);
+  }
+
+  .about-experience-title span:first-child {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-identity-title span,
+  .about-experience-title span,
+  .about-fit-title span {
+    white-space: normal;
+  }
+
+  .about-meet > .about-quote {
+    margin-top: 40px;
+    padding-top: 26px;
+  }
+
+  .about-meet > .about-quote p {
+    font-size: clamp(1.75rem, 9vw, 2.65rem);
+    text-align: left;
+  }
+
+  .about-meet > .about-quote cite {
+    text-align: left;
+  }
+}
+
+
+/* ABOUT QUOTE AND WARM CLOSING */
+/* Quote returns to the left hero column directly beneath 'with identity.'. */
+.about-meet > div:first-child .about-quote {
+  width: 100%;
+  max-width: 820px;
+  margin: 48px 0 0;
+  padding: 28px 0 0 28px;
+  border-top: 0;
+  border-left: 1px solid var(--black);
+}
+
+.about-meet > div:first-child .about-quote p {
+  margin: 0;
+  max-width: 780px;
+  font-size: clamp(1.7rem, 2.35vw, 2.65rem);
+  line-height: 1.28;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.about-meet > div:first-child .about-quote cite {
+  display: block;
+  margin-top: 22px;
+  text-align: left;
+}
+
+/* Disable the previous full-width quote placement if its selector remains in CSS. */
+.about-meet > .about-quote {
+  grid-column: auto;
+}
+
+/* Final About section: established warm-white canvas and dark text. */
+.about-closing {
+  color: var(--black) !important;
+  background: var(--white) !important;
+  border-top: 1px solid var(--line);
+}
+
+.about-closing .eyebrow,
+.about-closing > p {
+  color: var(--grey) !important;
+}
+
+.about-closing h2,
+.about-closing .text-link-light {
+  color: var(--black) !important;
+}
+
+.about-closing .button-light {
+  border-color: var(--black) !important;
+  color: var(--white) !important;
+  background: var(--black) !important;
+}
+
+.about-closing .button-light:hover,
+.about-closing .button-light:focus-visible {
+  color: var(--black) !important;
+  background: transparent !important;
+}
+
+@media (max-width: 900px) {
+  .about-meet > div:first-child .about-quote {
+    margin-top: 40px;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+  .about-meet > div:first-child .about-quote p {
+    font-size: clamp(1.65rem, 4vw, 2.35rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .about-meet > div:first-child .about-quote {
+    margin-top: 34px;
+    padding-top: 22px;
+    padding-left: 20px;
+  }
+
+  .about-meet > div:first-child .about-quote p {
+    font-size: clamp(1.55rem, 7.5vw, 2.15rem);
+  }
+}
+
+
+/* ABOUT CONTENT AND HIERARCHY REFINEMENT */
+/* Chapter 02 follows the same visual structure as the other numbered chapters. */
+#experience.about-chapter,
+#experience {
+  align-items: start;
+}
+
+#experience .chapter-heading,
+#experience > div:first-child {
+  align-self: start;
+}
+
+.about-experience-title,
+.about-philosophy-title {
+  margin: 0;
+  max-width: 100%;
+  line-height: .96;
+}
+
+.about-experience-title span,
+.about-philosophy-title span {
+  display: block;
+}
+
+.about-experience-title span:last-child,
+.about-philosophy-title span {
+  white-space: nowrap;
+}
+
+.about-experience-title span + span,
+.about-philosophy-title span + span {
+  margin-top: .04em;
+}
+
+/* Closing sentence uses the available desktop width and remains responsive below it. */
+.about-closing .about-closing-copy {
+  width: 100%;
+  max-width: none;
+}
+
+.about-closing-actions {
+  margin-top: 42px;
+}
+
+@media (min-width: 1180px) {
+  .about-closing .about-closing-copy {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1179px) {
+  .about-closing .about-closing-copy {
+    white-space: normal;
+    text-wrap: pretty;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-experience-title span:last-child,
+  .about-philosophy-title span {
+    white-space: normal;
+  }
+}
+
+
+/* ABOUT EXPERIENCE ALIGNMENT AND CTA SPACING */
+/*
+  Chapter 02 was squeezed because the protected headline phrase created a large
+  intrinsic width. Explicit grid tracks and min-width: 0 restore the same
+  number / headline / copy structure used by the other About chapters.
+*/
+@media (min-width: 1100px) {
+  #experience {
+    display: grid !important;
+    grid-template-columns: 110px minmax(0, 1.35fr) minmax(360px, .65fr) !important;
+    column-gap: 72px !important;
+    align-items: start !important;
+  }
+
+  #experience > * {
+    min-width: 0 !important;
+  }
+
+  #experience .about-experience-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(4rem, 5vw, 6.2rem) !important;
+    line-height: .96;
+    overflow-wrap: normal;
+  }
+
+  #experience .about-experience-title span:first-child {
+    white-space: normal !important;
+  }
+
+  #experience .about-experience-title span:last-child {
+    white-space: normal !important;
+    text-wrap: balance;
+  }
+
+  #experience .chapter-copy {
+    width: 100%;
+    max-width: 560px;
+    justify-self: end;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  #experience {
+    display: grid !important;
+    grid-template-columns: 72px minmax(0, 1.15fr) minmax(300px, .85fr) !important;
+    column-gap: 38px !important;
+    align-items: start !important;
+  }
+
+  #experience > * {
+    min-width: 0 !important;
+  }
+
+  #experience .about-experience-title {
+    font-size: clamp(3rem, 5.5vw, 4.5rem) !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience {
+    display: block !important;
+  }
+
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+
+  #experience .chapter-copy {
+    max-width: 100%;
+  }
+}
+
+/* Closing: keep the copy and the single consultation action visually connected. */
+.about-closing {
+  min-height: 0 !important;
+  justify-content: flex-start !important;
+  align-content: start !important;
+}
+
+.about-closing .about-closing-copy {
+  margin-top: 34px !important;
+  margin-bottom: 0 !important;
+}
+
+.about-closing .about-closing-actions {
+  margin-top: 26px !important;
+}
+
+@media (max-width: 760px) {
+  .about-closing .about-closing-copy {
+    margin-top: 26px !important;
+  }
+
+  .about-closing .about-closing-actions {
+    margin-top: 22px !important;
+  }
+}
+
+
+/* UNIFIED ABOUT CHAPTER GRID */
+/*
+  All four chapters use the same guides:
+  number | chapter heading block | body copy.
+*/
+@media (min-width: 1100px) {
+  .about-chapter,
+  #where-it-began,
+  #experience,
+  #why-not-normal,
+  #philosophy {
+    display: grid !important;
+    grid-template-columns: 72px minmax(0, 1.05fr) minmax(390px, .95fr) !important;
+    column-gap: 54px !important;
+    align-items: start !important;
+  }
+
+  .about-chapter > *,
+  #where-it-began > *,
+  #experience > *,
+  #why-not-normal > *,
+  #philosophy > * {
+    min-width: 0 !important;
+  }
+
+  .about-chapter .chapter-number,
+  #where-it-began .chapter-number,
+  #experience .chapter-number,
+  #why-not-normal .chapter-number,
+  #philosophy .chapter-number {
+    grid-column: 1 !important;
+  }
+
+  .about-chapter .chapter-heading,
+  #where-it-began .chapter-heading,
+  #experience .chapter-heading,
+  #why-not-normal .chapter-heading,
+  #philosophy .chapter-heading,
+  .about-chapter > div:nth-child(2),
+  #where-it-began > div:nth-child(2),
+  #experience > div:nth-child(2),
+  #why-not-normal > div:nth-child(2),
+  #philosophy > div:nth-child(2) {
+    grid-column: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    align-self: start !important;
+  }
+
+  .about-chapter .chapter-copy,
+  #where-it-began .chapter-copy,
+  #experience .chapter-copy,
+  #why-not-normal .chapter-copy,
+  #philosophy .chapter-copy {
+    grid-column: 3 !important;
+    width: 100% !important;
+    max-width: 590px !important;
+    margin: 0 !important;
+    justify-self: start !important;
+    align-self: start !important;
+  }
+
+  .about-chapter h2,
+  #where-it-began h2,
+  #experience h2,
+  #why-not-normal h2,
+  #philosophy h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(3.8rem, 4.55vw, 5.6rem) !important;
+    line-height: .98 !important;
+  }
+
+  /* Remove the earlier Chapter 02-only sizing behaviour. */
+  #experience .about-experience-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  .about-chapter,
+  #where-it-began,
+  #experience,
+  #why-not-normal,
+  #philosophy {
+    display: grid !important;
+    grid-template-columns: 56px minmax(0, .95fr) minmax(300px, 1.05fr) !important;
+    column-gap: 34px !important;
+    align-items: start !important;
+  }
+
+  .about-chapter > *,
+  #where-it-began > *,
+  #experience > *,
+  #why-not-normal > *,
+  #philosophy > * {
+    min-width: 0 !important;
+  }
+
+  .about-chapter .chapter-copy,
+  #where-it-began .chapter-copy,
+  #experience .chapter-copy,
+  #why-not-normal .chapter-copy,
+  #philosophy .chapter-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .about-chapter h2,
+  #where-it-began h2,
+  #experience h2,
+  #why-not-normal h2,
+  #philosophy h2 {
+    max-width: 100% !important;
+    font-size: clamp(2.9rem, 5vw, 4.15rem) !important;
+  }
+
+  #experience .about-experience-title span,
+  #philosophy .about-philosophy-title span {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-chapter,
+  #where-it-began,
+  #experience,
+  #why-not-normal,
+  #philosophy {
+    display: block !important;
+  }
+
+  .about-chapter .chapter-copy,
+  #where-it-began .chapter-copy,
+  #experience .chapter-copy,
+  #why-not-normal .chapter-copy,
+  #philosophy .chapter-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/* INDEX PHILOSOPHY AND SERVICES RECOVERY */
+/*
+  The About-page #philosophy selector also matched the homepage section.
+  Restore the homepage-specific two-column Philosophy composition.
+*/
+@media (min-width: 901px) {
+  .section.split-section.homepage-philosophy#philosophy {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.2fr) minmax(380px, .8fr) !important;
+    column-gap: 88px !important;
+    align-items: center !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy > div:first-child {
+    display: block !important;
+    grid-column: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: center !important;
+    overflow: visible !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    display: block !important;
+    grid-column: 2 !important;
+    width: 100% !important;
+    max-width: 620px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-self: end !important;
+    align-self: center !important;
+    overflow: visible !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(4.4rem, 6vw, 6.7rem) !important;
+    line-height: .96 !important;
+    overflow: visible !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow: visible !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    margin-top: 48px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    white-space: normal !important;
+  }
+}
+
+/*
+  Services: remove clipping and reduce both the category and service-title sizes.
+  Long phrases may wrap, but no words are hidden.
+*/
+.services-section .service-group-heading,
+.services-section .service-group-heading h3,
+.services-section .service-list,
+.services-section .service-item,
+.services-section .service-item summary,
+.services-section .service-item summary strong {
+  min-width: 0 !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.services-section .service-group-heading h3[id] > span {
+  max-width: 100%;
+  white-space: normal !important;
+}
+
+.services-section .service-item summary strong {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+@media (min-width: 1200px) {
+  .services-section .service-group {
+    grid-template-columns: minmax(300px, 36%) minmax(0, 64%) !important;
+    column-gap: 58px !important;
+  }
+
+  .services-section .service-group-heading h3,
+  .services-section .service-group-heading h3[id] {
+    font-size: clamp(2.8rem, 3.25vw, 3.75rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  .services-section .service-item summary strong {
+    font-size: clamp(1.15rem, 1.35vw, 1.55rem) !important;
+    line-height: 1.18 !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+  .services-section .service-group {
+    grid-template-columns: minmax(270px, 37%) minmax(0, 63%) !important;
+    column-gap: 44px !important;
+  }
+
+  .services-section .service-group-heading h3,
+  .services-section .service-group-heading h3[id] {
+    font-size: clamp(2.45rem, 3.7vw, 3.25rem) !important;
+  }
+
+  .services-section .service-item summary strong {
+    font-size: clamp(1.05rem, 1.45vw, 1.35rem) !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .services-section .service-group {
+    grid-template-columns: minmax(230px, 38%) minmax(0, 62%) !important;
+    column-gap: 34px !important;
+  }
+
+  .services-section .service-group-heading h3,
+  .services-section .service-group-heading h3[id] {
+    font-size: clamp(2.15rem, 4.3vw, 2.85rem) !important;
+  }
+
+  .services-section .service-item summary strong {
+    font-size: 1.05rem !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-section .service-group-heading h3,
+  .services-section .service-group-heading h3[id] {
+    font-size: clamp(2.4rem, 11vw, 3.35rem) !important;
+  }
+
+  .services-section .service-item summary strong {
+    font-size: 1.05rem !important;
+  }
+}
+
+
+/* FINAL INDEX ORDER PHILOSOPHY AND COLOUR FLOW */
+/*
+  Homepage flow:
+  warm hero -> black positioning -> warm philosophy -> stone method
+  -> black conversation -> stone services.
+*/
+.homepage-philosophy {
+  color: var(--black) !important;
+  background: var(--white) !important;
+}
+
+.homepage-method {
+  color: var(--black) !important;
+  background: #e9e6de !important;
+}
+
+.homepage-contact {
+  color: var(--white) !important;
+  background: var(--black) !important;
+}
+
+.homepage-services {
+  color: var(--black) !important;
+  background: #e9e6de !important;
+}
+
+/* Philosophy: compact editorial balance with no collision between columns. */
+@media (min-width: 1100px) {
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(420px, .72fr) !important;
+    column-gap: 84px !important;
+    align-items: center !important;
+    padding-top: 82px !important;
+    padding-bottom: 82px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child {
+    display: block !important;
+    grid-column: 1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    display: block !important;
+    grid-column: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 620px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-self: end !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 20px 0 0 !important;
+    font-size: clamp(3.8rem, 5.15vw, 5.7rem) !important;
+    line-height: .98 !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-emphasis {
+    font-size: 1.22rem !important;
+    line-height: 1.48 !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    font-size: clamp(3.5rem, 7vw, 5rem) !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    white-space: normal !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    margin-top: 44px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    font-size: clamp(3rem, 13.5vw, 4.35rem) !important;
+    line-height: .98 !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    white-space: normal !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    margin-top: 42px !important;
+  }
+}
+
+/* Smooth boundaries after the reordered sections. */
+.homepage-method,
+.homepage-contact,
+.homepage-services {
+  border-top: 0 !important;
+}
+
+
+/* DEFINITIVE INDEX COLOUR BANDS AND PHILOSOPHY */
+/*
+  Full-bleed backgrounds without changing the established content grid.
+  The large shadow extends each section colour to both viewport edges.
+*/
+.homepage-philosophy,
+.homepage-method,
+.homepage-contact,
+.homepage-services {
+  position: relative;
+  isolation: isolate;
+  clip-path: inset(0 -100vmax);
+}
+
+.homepage-philosophy {
+  color: var(--black) !important;
+  background: var(--white) !important;
+  box-shadow: 0 0 0 100vmax var(--white);
+}
+
+.homepage-method {
+  color: var(--black) !important;
+  background: #e9e6de !important;
+  box-shadow: 0 0 0 100vmax #e9e6de;
+}
+
+.homepage-contact {
+  color: var(--white) !important;
+  background: var(--black) !important;
+  box-shadow: 0 0 0 100vmax var(--black);
+}
+
+.homepage-services {
+  color: var(--black) !important;
+  background: #e9e6de !important;
+  box-shadow: 0 0 0 100vmax #e9e6de;
+}
+
+/* Remove borders or margins that visually expose the following section. */
+.homepage-philosophy,
+.homepage-method,
+.homepage-contact,
+.homepage-services {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Philosophy desktop: balanced columns with contained typography. */
+@media (min-width: 1100px) {
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: grid !important;
+    grid-template-columns: minmax(0, .95fr) minmax(420px, .78fr) !important;
+    column-gap: 76px !important;
+    align-items: center !important;
+    padding-top: 88px !important;
+    padding-bottom: 88px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child {
+    display: block !important;
+    grid-column: 1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    align-self: center !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    display: block !important;
+    grid-column: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 590px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-self: end !important;
+    align-self: center !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 20px 0 0 !important;
+    padding: 0 !important;
+    font-size: clamp(3.5rem, 4.65vw, 5.15rem) !important;
+    line-height: .98 !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    display: block !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy p {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-emphasis {
+    margin-top: 30px !important;
+    padding-top: 26px !important;
+    font-size: 1.2rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Method: keep the editorial scale but prevent the title feeling oversized. */
+@media (min-width: 1100px) {
+  .homepage-method .method-title {
+    font-size: clamp(4rem, 5.7vw, 6rem) !important;
+    line-height: .96 !important;
+  }
+
+  .homepage-method {
+    padding-top: 82px !important;
+    padding-bottom: 82px !important;
+  }
+
+  .homepage-method .process-grid {
+    margin-top: 42px !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    font-size: clamp(3.25rem, 6.8vw, 4.7rem) !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    white-space: normal !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    margin-top: 44px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .homepage-philosophy,
+  .homepage-method,
+  .homepage-contact,
+  .homepage-services {
+    clip-path: inset(0 -100vmax);
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy {
+    display: block !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy > div:first-child,
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title {
+    font-size: clamp(2.9rem, 13vw, 4.1rem) !important;
+    line-height: .98 !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-title span {
+    white-space: normal !important;
+  }
+
+  main .section.split-section.homepage-philosophy#philosophy .philosophy-copy {
+    margin-top: 40px !important;
+  }
+}
+
+
+/* COMPACT SERVICES DARK CATALOGUE */
+/* Reduce vertical space only inside the dedicated Services-page catalogue. */
+.services-section > .section-inner {
+  padding-top: 82px !important;
+  padding-bottom: 82px !important;
+}
+
+.services-section .services-intro {
+  margin-bottom: 58px !important;
+}
+
+.services-section .service-group {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+/* Keep accordion rows comfortable while removing unnecessary height. */
+.services-section .service-item summary {
+  padding-top: 21px !important;
+  padding-bottom: 21px !important;
+}
+
+/* Expanded descriptions remain readable but slightly tighter. */
+.services-section .service-content {
+  padding-bottom: 30px !important;
+}
+
+.services-section .service-content li {
+  margin-bottom: 10px !important;
+}
+
+.services-section .service-note {
+  margin-top: 22px !important;
+}
+
+@media (min-width: 1180px) {
+  .services-section > .section-inner {
+    padding-top: 86px !important;
+    padding-bottom: 86px !important;
+  }
+
+  .services-section .service-group {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1179px) {
+  .services-section > .section-inner {
+    padding-top: 72px !important;
+    padding-bottom: 72px !important;
+  }
+
+  .services-section .services-intro {
+    margin-bottom: 48px !important;
+  }
+
+  .services-section .service-group {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-section > .section-inner {
+    padding-top: 58px !important;
+    padding-bottom: 58px !important;
+  }
+
+  .services-section .services-intro {
+    margin-bottom: 38px !important;
+  }
+
+  .services-section .service-group {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+  }
+
+  .services-section .service-item summary {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .services-section .service-content {
+    padding-bottom: 26px !important;
+  }
+}
+
+
+/* SERVICES WIDE DESKTOP REFINEMENT */
+/* All changes are desktop-only. Tablet and mobile rules remain untouched. */
+@media (min-width: 1180px) {
+  /* Keep the requested second phrase together: Shopping & / Special Experiences. */
+  .services-section #group-4 > span {
+    display: block !important;
+  }
+
+  .services-section #group-4 > span:last-child {
+    white-space: nowrap !important;
+  }
+
+  /* One-line desktop consultation heading. */
+  .services-page-contact h2 {
+    width: 100%;
+    max-width: none !important;
+    font-size: clamp(4.5rem, 6.25vw, 6.8rem) !important;
+    line-height: .96 !important;
+    white-space: nowrap !important;
+    text-align: center;
+  }
+
+  /* One complete sentence per line; no missing space between sentences. */
+  .services-page-contact .services-contact-copy {
+    width: 100%;
+    max-width: none !important;
+    margin: 42px auto 0 !important;
+    text-align: center;
+  }
+
+  .services-page-contact .services-contact-sentence {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .services-page-contact .services-contact-sentence + .services-contact-sentence {
+    margin-top: 8px;
+  }
+
+  /* Keep the action centred beneath the copy. */
+  .services-page-contact .button {
+    display: block;
+    width: fit-content;
+    margin: 46px auto 0 !important;
+  }
+}
