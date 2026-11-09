@@ -4685,3 +4685,535 @@ footer {
     font-size: clamp(2.75rem, 13vw, 4rem) !important;
   }
 }
+
+
+/* ABOUT MOBILE SPACING AND CLOSING TITLE */
+.about-closing-title span {
+  display: inline;
+}
+
+@media (max-width: 760px) {
+  /* Give every numbered About chapter a clear pause between title and copy. */
+  #where-it-began .chapter-copy,
+  #experience .chapter-copy,
+  #why-not-normal .chapter-copy,
+  #philosophy.about-chapter .chapter-copy {
+    margin-top: 42px !important;
+  }
+
+  /* Keep the small chapter label comfortably separated from the main title. */
+  #where-it-began .chapter-heading .eyebrow,
+  #experience .chapter-heading .eyebrow,
+  #why-not-normal .chapter-heading .eyebrow,
+  #philosophy.about-chapter .chapter-heading .eyebrow {
+    margin-bottom: 34px !important;
+  }
+
+  /* Four exact lines in the final About statement. */
+  .about-closing .about-closing-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    font-size: clamp(3.25rem, 15.5vw, 4.8rem) !important;
+    line-height: .94 !important;
+    text-align: center !important;
+  }
+
+  .about-closing .about-closing-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .about-closing .about-closing-title span + span {
+    margin-top: .02em;
+  }
+}
+
+@media (min-width: 761px) {
+  .about-closing .about-closing-title span + span::before {
+    content: " ";
+  }
+}
+
+
+/* ABOUT AND CONSULTATION MOBILE HEADINGS */
+@media (max-width: 760px) {
+  /* About 03: two exact lines, no isolated 'in.'. */
+  #why-not-normal .about-fit-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(2.9rem, 13.2vw, 4rem) !important;
+    line-height: .96 !important;
+  }
+
+  #why-not-normal .about-fit-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  /* About 02: fit more words per line without horizontal overflow. */
+  #experience .about-experience-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(2.55rem, 11.4vw, 3.55rem) !important;
+    line-height: .98 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  #experience .about-experience-title span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  #experience .about-experience-title span + span::before {
+    content: " ";
+  }
+
+  /* Consultation: two balanced phrases, never a lone 'a'. */
+  .consultation-mobile-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(3rem, 13.4vw, 4.25rem) !important;
+    line-height: .96 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .consultation-mobile-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .consultation-mobile-title span + span {
+    margin-top: .04em;
+  }
+}
+
+@media (min-width: 761px) {
+  .consultation-mobile-title span {
+    display: inline;
+  }
+
+  .consultation-mobile-title span + span::before {
+    content: " ";
+  }
+}
+
+
+/* FINAL ABOUT MOBILE CHAPTER PATTERN */
+@media (max-width: 760px) {
+  /* One shared layout pattern for all four numbered About chapters. */
+  #where-it-began,
+  #experience,
+  #why-not-normal,
+  #philosophy.about-chapter {
+    display: block !important;
+  }
+
+  #where-it-began > *,
+  #experience > *,
+  #why-not-normal > *,
+  #philosophy.about-chapter > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Identical typography for all four chapter titles. */
+  #where-it-began .about-story-title,
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(2.85rem, 12.4vw, 3.8rem) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: -.035em !important;
+    line-height: .98 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Shared rhythm: chapter label -> title -> body copy. */
+  #where-it-began .chapter-heading .eyebrow,
+  #experience .chapter-heading .eyebrow,
+  #why-not-normal .chapter-heading .eyebrow,
+  #philosophy.about-chapter .chapter-heading .eyebrow {
+    margin-bottom: 30px !important;
+  }
+
+  #where-it-began .chapter-copy,
+  #experience .chapter-copy,
+  #why-not-normal .chapter-copy,
+  #philosophy.about-chapter .chapter-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 38px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Chapters 01 and 04 keep their intentional phrase lines. */
+  #where-it-began .about-story-title span,
+  #philosophy.about-chapter .about-philosophy-title span {
+    display: block !important;
+    white-space: normal !important;
+  }
+
+  /* Chapter 02 uses natural inline flow to fit more words per line. */
+  #experience .about-experience-title span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  #experience .about-experience-title span + span::before {
+    content: " ";
+  }
+
+  /* Chapter 03 keeps the approved two-line phrase structure. */
+  #why-not-normal .about-fit-title span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  #why-not-normal .about-fit-title span + span {
+    margin-top: .02em;
+  }
+}
+
+/* Very small phones: one shared smaller scale, still consistent across all chapters. */
+@media (max-width: 360px) {
+  #where-it-began .about-story-title,
+  #experience .about-experience-title,
+  #why-not-normal .about-fit-title,
+  #philosophy.about-chapter .about-philosophy-title {
+    font-size: clamp(2.55rem, 12vw, 3.05rem) !important;
+  }
+}
+
+
+/* COMPACT CONSULTATION MOBILE SPACING */
+@media (max-width: 760px) {
+  /* Reduce the large outer canvas while preserving the established side gutters. */
+  .consultation-page .consultation-hero,
+  .consultation-page .consultation-layout,
+  .consultation-page .consultation-section,
+  .consultation-page main > .section {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
+
+  /* Keep the hero compact: title, introduction, then the form sequence. */
+  .consultation-page .consultation-mobile-title {
+    margin-top: 0 !important;
+    margin-bottom: 34px !important;
+  }
+
+  .consultation-page .consultation-intro,
+  .consultation-page .consultation-hero > p,
+  .consultation-page .consultation-copy {
+    margin-top: 0 !important;
+    margin-bottom: 46px !important;
+  }
+
+  /* Pull the divider and first prompt closer to the introduction. */
+  .consultation-page .consultation-form,
+  .consultation-page form {
+    margin-top: 0 !important;
+    padding-top: 46px !important;
+  }
+
+  /* Reduce the tall empty intervals between Share, Review, and subsequent prompts. */
+  .consultation-page .consultation-step,
+  .consultation-page .form-step,
+  .consultation-page fieldset {
+    margin-top: 0 !important;
+    margin-bottom: 64px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .consultation-page .consultation-step + .consultation-step,
+  .consultation-page .form-step + .form-step,
+  .consultation-page fieldset + fieldset {
+    margin-top: 64px !important;
+  }
+
+  /* Tighten internal prompt rhythm without reducing form-control tap areas. */
+  .consultation-page .consultation-step h2,
+  .consultation-page .consultation-step h3,
+  .consultation-page .form-step h2,
+  .consultation-page .form-step h3,
+  .consultation-page fieldset legend {
+    margin-top: 22px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .consultation-page .consultation-step > p,
+  .consultation-page .form-step > p,
+  .consultation-page fieldset > p {
+    margin-top: 0 !important;
+    margin-bottom: 28px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .consultation-page .consultation-hero,
+  .consultation-page .consultation-layout,
+  .consultation-page .consultation-section,
+  .consultation-page main > .section {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+
+  .consultation-page .consultation-step,
+  .consultation-page .form-step,
+  .consultation-page fieldset {
+    margin-bottom: 54px !important;
+  }
+}
+
+
+/* MATCH CONSULTATION MOBILE HEADING SIZES */
+@media (max-width: 760px) {
+  .consultation-page .consultation-mobile-title,
+  .consultation-page .consultation-needs-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(3rem, 13.4vw, 4.25rem) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: -.045em !important;
+    line-height: .96 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .consultation-page .consultation-mobile-title,
+  .consultation-page .consultation-needs-title {
+    font-size: clamp(2.75rem, 12.8vw, 3.35rem) !important;
+  }
+}
+
+
+/* FINAL MOBILE INDEX CONSULTATION AND HEADER V2 */
+@media (max-width: 1099px) {
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    transform: translateZ(0);
+    isolation: isolate;
+  }
+
+  .site-header nav,
+  .site-header #main-navigation {
+    top: 100% !important;
+    z-index: 999 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  /* Homepage Services heading. */
+  #services .homepage-services-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: clamp(2.85rem, 12.2vw, 3.75rem) !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    letter-spacing: -.035em !important;
+    line-height: .98 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Consultation compact mobile rhythm. */
+  .consultation-page .consultation-hero,
+  .consultation-page .consultation-layout,
+  .consultation-page .consultation-section,
+  .consultation-page main > .section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .consultation-page .consultation-intro,
+  .consultation-page .consultation-copy,
+  .consultation-page .consultation-hero > p {
+    margin-bottom: 24px !important;
+  }
+
+  .consultation-page .consultation-form,
+  .consultation-page form {
+    margin-top: 0 !important;
+    padding-top: 24px !important;
+    row-gap: 0 !important;
+    gap: 0 !important;
+  }
+
+  .consultation-page .consultation-step,
+  .consultation-page .form-step,
+  .consultation-page fieldset,
+  .consultation-page form > section,
+  .consultation-page form > div[class*="step"] {
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+  }
+
+  .consultation-page .consultation-step + .consultation-step,
+  .consultation-page .form-step + .form-step,
+  .consultation-page fieldset + fieldset,
+  .consultation-page form > section + section,
+  .consultation-page form > div[class*="step"] + div[class*="step"] {
+    margin-top: 0 !important;
+  }
+
+  .consultation-page .consultation-step h2,
+  .consultation-page .consultation-step h3,
+  .consultation-page .form-step h2,
+  .consultation-page .form-step h3,
+  .consultation-page fieldset legend,
+  .consultation-page form > section h2,
+  .consultation-page form > section h3 {
+    margin-top: 12px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .consultation-page .consultation-step > p,
+  .consultation-page .form-step > p,
+  .consultation-page fieldset > p,
+  .consultation-page form > section > p {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #services .homepage-services-title {
+    font-size: clamp(2.55rem, 11.8vw, 3.1rem) !important;
+  }
+
+  .consultation-page .consultation-step,
+  .consultation-page .form-step,
+  .consultation-page fieldset,
+  .consultation-page form > section,
+  .consultation-page form > div[class*="step"] {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+}
+
+
+/* FIXED MOBILE SITE HEADER */
+@media (max-width: 760px) {
+  :root {
+    --mobile-header-height: 88px;
+  }
+
+  /* Reserve space so page content never sits underneath the fixed header. */
+  body {
+    padding-top: var(--mobile-header-height) !important;
+  }
+
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 2000 !important;
+    width: 100% !important;
+    min-height: var(--mobile-header-height);
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    background: rgba(245, 243, 237, .98) !important;
+    box-shadow: 0 1px 0 var(--line);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: translateZ(0);
+  }
+
+  /* The opened menu remains fixed directly beneath the header. */
+  .site-header nav,
+  .site-header #main-navigation {
+    position: fixed !important;
+    top: var(--mobile-header-height) !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 1999 !important;
+    max-height: calc(100dvh - var(--mobile-header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--white) !important;
+  }
+
+  /* Account for the fixed header when navigating to in-page anchors. */
+  [id] {
+    scroll-margin-top: calc(var(--mobile-header-height) + 18px);
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --mobile-header-height: 82px;
+  }
+
+  .site-header {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+}
+
+
+/* ABOUT CLOSING RESPONSIVE LINES */
+.about-closing .about-closing-title {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+/* Tablet and desktop: two exact lines. */
+@media (min-width: 761px) {
+  .about-closing .closing-line {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .about-closing .closing-line + .closing-line {
+    margin-top: .04em;
+  }
+
+  .about-closing .closing-phrase {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+
+  .about-closing .closing-phrase + .closing-phrase::before {
+    content: " ";
+  }
+}
+
+/* Mobile: four exact lines. */
+@media (max-width: 760px) {
+  .about-closing .closing-line,
+  .about-closing .closing-phrase {
+    display: contents;
+  }
+
+  .about-closing .closing-phrase {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  .about-closing .closing-phrase + .closing-phrase {
+    margin-top: .02em;
+  }
+}
