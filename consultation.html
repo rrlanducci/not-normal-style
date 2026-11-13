@@ -56,10 +56,31 @@
         <p class="eyebrow">Consultation enquiry</p>
         <h2 class="consultation-needs-title">Tell us what you need.</h2>
         <p>Fields marked with an asterisk are required. Please do not include health information, identity documents, payment details or other sensitive personal information.</p>
-        <div class="form-preview-notice" role="note"><strong>Local preview:</strong> the form is designed and validated, but delivery is not connected yet. No information will be transmitted until a form provider and business email are configured.</div>
+        
+<div class="form-preview-notice" role="note">
+  <strong>Personal review:</strong>
+  Every enquiry is reviewed personally by Camila Rades.
+  Please allow up to two business days for a response.
+</div>
+
       </div>
 
-      <form class="consultation-form" id="consultation-form" novalidate>
+      <form
+  class="consultation-form"
+  id="consultation-form"
+  action="https://formspree.io/f/mppdwrvz"
+  method="POST"
+  novalidate
+>
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Consultation Request - Not Normal Style">
+
+  <input
+    type="hidden"
+    name="_next"
+    value="https://notnormalstyle.com/thank-you.html">
         <div class="form-row two-columns">
           <div class="field-group">
             <label for="full-name">Name <span aria-hidden="true">*</span></label>

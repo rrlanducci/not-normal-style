@@ -79,7 +79,6 @@ if (consultationForm) {
   };
 
   consultationForm.addEventListener("submit", (event) => {
-    event.preventDefault();
     clearErrors();
     let firstInvalid = null;
 
@@ -99,12 +98,14 @@ if (consultationForm) {
     if (message.value.trim().length < 20) { setError(message, "Please add at least 20 characters so Camila Rades can understand your enquiry."); firstInvalid ||= message; }
     if (!privacy.checked) { setError(privacy, "Please confirm that you have read the Privacy Policy."); firstInvalid ||= privacy; }
 
-    if (firstInvalid) {
-      status.textContent = "Please review the highlighted fields.";
-      firstInvalid.focus();
-      return;
-    }
+if (firstInvalid) {
+  event.preventDefault();
 
-    status.textContent = "The form is complete. Delivery is not connected in this local preview, so no information has been sent.";
+  status.textContent = "Please review the highlighted fields.";
+  firstInvalid.focus();
+  return;
+}
+
+status.textContent = "Sending your enquiry...";
   });
 }
