@@ -106,6 +106,44 @@ if (firstInvalid) {
   return;
 }
 
+event.preventDefault();
+
 status.textContent = "Sending your enquiry...";
+
+const modal = document.querySelector("#consultation-success-modal");
+const closeButton = document.querySelector("#close-success-modal");
+
+fetch("https://formspree.io/f/mppdwrvz", {
+  method: "POST",
+  body: new FormData(consultationForm),
+  headers: {
+    Accept: "application/json"
+  }
+})
+.then((response) => {
+  if (!response.ok) {
+    throw new Error("Submission failed.");
+  }
+
+  consultationForm.reset();
+
+  if (modal) {
+    modal.style.display = "flex";
+  }
+
+  status.textContent = "";
+})
+.catch(() => {
+  status.textContent =
+    "Something went wrong while sending your enquiry. Please try again or contact us by email.";
+});
+
+if (closeButton) {
+  closeButton.onclick = () => {
+    modal.style.display = "none";
+  };
+}
+
+return;
   });
 }

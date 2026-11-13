@@ -79,10 +79,7 @@
     name="_subject"
     value="New Consultation Request - Not Normal Style">
 
-  <input
-    type="hidden"
-    name="_next"
-    value="https://notnormalstyle.com/thank-you.html">
+  
         <div class="form-row two-columns">
           <div class="field-group">
             <label for="full-name">Name <span aria-hidden="true">*</span></label>
@@ -192,6 +189,49 @@
       <a class="footer-link" href="privacy.html">Privacy</a>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  
+<div id="consultation-success-modal" style="
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+z-index:9999;
+align-items:center;
+justify-content:center;
+padding:2rem;
+">
+
+  <div style="
+  background:#ffffff;
+  max-width:560px;
+  width:100%;
+  padding:3rem;
+  text-align:center;
+  border:1px solid #d8d4ce;
+  ">
+
+    <h2>Thank you.</h2>
+
+    <p>
+      Your enquiry has been received.
+    </p>
+
+    <p>
+      Camila will personally review your enquiry
+      and respond within five business days.
+    </p>
+
+    <button
+      id="close-success-modal"
+      class="button button-dark"
+      type="button">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
