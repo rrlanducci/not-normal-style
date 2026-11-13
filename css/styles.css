@@ -5217,3 +5217,27 @@ footer {
     margin-top: .02em;
   }
 }
+
+
+/* PRIVACY POLICY REFINEMENT */
+
+.legal-hero {
+  padding-bottom: 36px !important;
+}
+
+.legal-page section {
+  gap: 32px !important;
+  padding: 24px 0 !important;
+}
+
+.legal-page p {
+  line-height: 1.75;
+}
+
+.legal-page section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-page h2 {
+  margin-bottom: 10px;
+}
