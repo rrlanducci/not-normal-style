@@ -129,6 +129,13 @@ fetch("https://formspree.io/f/mppdwrvz", {
 
   if (modal) {
     modal.style.display = "flex";
+
+    const modalTitle =
+      document.querySelector("#success-modal-title");
+
+    if (modalTitle) {
+      modalTitle.focus();
+    }
   }
 
   status.textContent = "";
@@ -138,11 +145,39 @@ fetch("https://formspree.io/f/mppdwrvz", {
     "Something went wrong while sending your enquiry. Please try again or contact us by email.";
 });
 
-if (closeButton) {
-  closeButton.onclick = () => {
+const previousFocus = document.activeElement;
+
+const closeModal = () => {
+  if (modal) {
     modal.style.display = "none";
-  };
+  }
+
+  if (previousFocus) {
+    previousFocus.focus();
+  }
+};
+
+if (closeButton) {
+  closeButton.addEventListener("click", closeModal);
 }
+
+if (modal) {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    modal &&
+    modal.style.display === "flex"
+  ) {
+    closeModal();
+  }
+});
 
 return;
   });
