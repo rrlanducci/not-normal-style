@@ -88,14 +88,14 @@ if (consultationForm) {
     const language = consultationForm.elements.language;
     const message = consultationForm.elements.message;
     const privacy = consultationForm.elements["privacy-acknowledgement"];
-    const interest = consultationForm.querySelector("input[name='interest']:checked");
+    const interests = consultationForm.querySelectorAll("input[name='interest']:checked");
 
     if (!name.value.trim()) { setError(name, "Please enter your name."); firstInvalid ||= name; }
     if (!email.value.trim() || !email.validity.valid) { setError(email, "Please enter a valid email address, for example name@example.com."); firstInvalid ||= email; }
     if (!confirmEmail.value.trim() || confirmEmail.value.trim().toLowerCase() !== email.value.trim().toLowerCase()) { setError(confirmEmail, "The email addresses must match."); firstInvalid ||= confirmEmail; }
     if (!language.value) { setError(language, "Please select your preferred language."); firstInvalid ||= language; }
-    if (!interest) { document.querySelector("#interest-error").textContent = "Please choose what brings you here."; firstInvalid ||= consultationForm.querySelector("input[name='interest']"); }
-    if (message.value.trim().length < 20) { setError(message, "Please add at least 20 characters so Camila Rades can understand your enquiry."); firstInvalid ||= message; }
+    if (!interests.length) { document.querySelector("#interest-error").textContent = "Please select at least one option."; firstInvalid ||= consultationForm.querySelector("input[name='interest']"); }
+    
     if (!privacy.checked) { setError(privacy, "Please confirm that you have read the Privacy Policy."); firstInvalid ||= privacy; }
 
 if (firstInvalid) {

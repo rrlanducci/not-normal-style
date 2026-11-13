@@ -120,15 +120,15 @@
 
         <fieldset class="choice-group" aria-describedby="interest-help interest-error">
           <legend>What brings you here? <span aria-hidden="true">*</span></legend>
-          <p class="field-help" id="interest-help">Choose the option that feels closest. You do not need to know which service is right for you.</p>
+          <p class="field-help" id="interest-help">Select all that apply. You do not need to know which service is right for you.</p>
           <div class="choice-grid">
-            <label><input type="radio" name="interest" value="Personal style" required><span>Understand my personal style</span></label>
-            <label><input type="radio" name="interest" value="Colour"><span>Find direction with colour</span></label>
-            <label><input type="radio" name="interest" value="Wardrobe"><span>Improve or simplify my wardrobe</span></label>
-            <label><input type="radio" name="interest" value="Event"><span>Prepare for an event or occasion</span></label>
-            <label><input type="radio" name="interest" value="Professional image"><span>Develop my professional image</span></label>
-            <label><input type="radio" name="interest" value="Complete experience"><span>Explore the complete experience</span></label>
-            <label><input type="radio" name="interest" value="Not sure"><span>I am not sure yet</span></label>
+            <label><input type="checkbox" name="interest" value="Personal style" required><span>Understand my personal style</span></label>
+            <label><input type="checkbox" name="interest" value="Colour"><span>Find direction with colour</span></label>
+            <label><input type="checkbox" name="interest" value="Wardrobe"><span>Improve or simplify my wardrobe</span></label>
+            <label><input type="checkbox" name="interest" value="Event"><span>Prepare for an event or occasion</span></label>
+            <label><input type="checkbox" name="interest" value="Professional image"><span>Develop my professional image</span></label>
+            <label><input type="checkbox" name="interest" value="Complete experience"><span>Explore the complete experience</span></label>
+            <label><input type="checkbox" name="interest" value="Not sure"><span>I am not sure yet</span></label>
           </div>
           <p class="field-error" id="interest-error"></p>
         </fieldset>
@@ -152,15 +152,30 @@
 
         <div class="field-group">
           <label for="message">What would you like help with? <span aria-hidden="true">*</span></label>
-          <p class="field-help" id="message-help">You may include your goals, current challenges, timing or an occasion you are preparing for.</p>
-          <textarea id="message" name="message" rows="7" minlength="20" aria-describedby="message-help message-error" required></textarea>
+          <p class="field-help" id="message-help">Share as much or as little as you feel comfortable. You may include goals, challenges, timing or an occasion you are preparing for.</p>
+          <textarea id="message" name="message" rows="7" maxlength="1500" aria-describedby="message-help message-error" required></textarea>
           <p class="field-error" id="message-error"></p>
         </div>
 
-        <div class="privacy-summary">
-          <h2>How we use your information</h2>
-          <p>Not Normal Style will use the information you provide to review and respond to your consultation enquiry, recommend an appropriate next step and communicate with you about the requested service. Your information will not be used for marketing unless you separately choose to receive marketing communications.</p>
-        </div>
+        
+<div class="privacy-summary">
+  <h2>How we use your information</h2>
+
+  <p>
+    The information you provide is used solely to review and respond to your enquiry,
+    discuss potential services and arrange consultations where requested.
+  </p>
+
+  <p>
+    Your information is not sold and is not used for marketing communications.
+  </p>
+
+  <p>
+    Information is shared only with service providers required to operate the website,
+    consultation form and business email.
+  </p>
+</div>
+
 
         <div class="consent-group">
           <label>
