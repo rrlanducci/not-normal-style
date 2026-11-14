@@ -1,0 +1,180 @@
+/* Service navigator: warm ivory editorial treatment */
+.services-page .service-navigator {
+  box-sizing: border-box;
+  width: 100vw;
+  margin: 64px 0 92px calc(50% - 50vw);
+  padding: 68px max(24px, calc((100vw - 1440px) / 2));
+  color: #11110f;
+  background: #f1eee6;
+}
+
+.services-page .service-navigator__heading {
+  max-width: 900px;
+  margin-bottom: 42px;
+}
+
+.services-page .service-navigator__heading .eyebrow,
+.services-page .service-navigator__step-label {
+  color: #6f6e68;
+}
+
+.services-page .service-navigator__heading h2,
+.services-page #service-navigator-refine-title,
+.services-page #service-navigator-result-title {
+  color: #11110f;
+}
+
+.services-page .service-navigator__heading h2 {
+  max-width: 850px;
+  margin: 12px 0 18px;
+}
+
+.services-page .service-navigator__heading > p:last-child,
+.services-page .service-navigator__result > p:not(.service-navigator__step-label) {
+  max-width: 720px;
+  color: #11110f;
+}
+
+.services-page .service-navigator__step,
+.services-page .service-navigator__result {
+  max-width: none;
+  padding: 0;
+  border: 0;
+  color: #11110f;
+  background: transparent;
+}
+
+.services-page .service-navigator__step-label {
+  margin: 0 0 16px;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.services-page .service-navigator__choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid rgba(17, 17, 15, 0.26);
+  border-left: 1px solid rgba(17, 17, 15, 0.26);
+}
+
+.services-page .service-navigator__choices button {
+  min-height: 78px;
+  margin: 0;
+  padding: 20px 22px;
+  border: 0;
+  border-right: 1px solid rgba(17, 17, 15, 0.26);
+  border-bottom: 1px solid rgba(17, 17, 15, 0.26);
+  color: #11110f;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+
+.services-page .service-navigator__choices button:hover,
+.services-page .service-navigator__choices button:focus-visible {
+  color: #f4f1ea;
+  background: #11110f;
+  outline: 0;
+}
+
+.services-page .service-navigator__choices button:focus-visible {
+  box-shadow: inset 0 0 0 3px #f1eee6;
+}
+
+.services-page .service-navigator__step-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.services-page .service-navigator__back,
+.services-page .service-navigator__restart {
+  border: 0;
+  padding: 0;
+  color: #11110f;
+  background: transparent;
+  font: inherit;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.services-page #service-navigator-refine-title,
+.services-page #service-navigator-result-title {
+  margin: 0 0 26px;
+}
+
+.services-page .service-navigator__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 24px;
+}
+
+.services-page .service-navigator__actions .button:not(.button-dark) {
+  border: 1px solid #11110f;
+  color: #11110f;
+  background: transparent;
+}
+
+.services-page .service-navigator__actions .button-dark,
+.services-page .service-navigator__actions .button:not(.button-dark):hover,
+.services-page .service-navigator__actions .button:not(.button-dark):focus-visible {
+  border-color: #11110f;
+  color: #f4f1ea;
+  background: #11110f;
+}
+
+.services-page .service-navigator__actions .button-dark:hover,
+.services-page .service-navigator__actions .button-dark:focus-visible {
+  color: #11110f;
+  background: transparent;
+}
+
+.services-page .service-item {
+  scroll-margin-top: 30px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (min-width: 761px) and (max-width: 1099px) {
+  .services-page .service-navigator {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .services-page .service-navigator {
+    margin-top: 44px;
+    margin-bottom: 64px;
+    padding: 48px 24px;
+  }
+
+  .services-page .service-navigator__choices {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page .service-navigator__choices button {
+    min-height: 68px;
+  }
+
+  .services-page .service-navigator__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .services-page .service-navigator__actions .button {
+    text-align: center;
+  }
+}

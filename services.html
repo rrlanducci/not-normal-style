@@ -6,6 +6,7 @@
   <meta name="description" content="Explore personal image consulting, wardrobe, occasion and professional styling services by Camila Rades.">
   <title>Services | Not Normal Style</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/service-navigator.css">
 
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,7 +28,7 @@
 <meta name="twitter:image" content="https://notnormalstyle.com/images/og-image.svg">
 
 </head>
-<body>
+<body class="services-page">
   <header class="site-header">
     <a class="site-brand" href="index.html" aria-label="Not Normal Style home">
       <img class="site-brand-logo" src="images/not-normal-style-logo-cropped.png" alt="">
@@ -63,6 +64,51 @@
 <div class="section-inner">
 <p class="eyebrow">Find your starting point</p>
 <div class="services-intro"><h2>Style, considered personally.</h2><div class="services-intro-copy"><p>Your style, wardrobe and goals are entirely individual. Each experience begins with understanding what you need now, whether that means discovering your direction, refining your wardrobe, preparing for an occasion or strengthening your professional presence.</p><p>Select a service to explore what is included.</p></div></div>
+
+
+<!-- Service navigator -->
+<section class="service-navigator" id="service-navigator" aria-labelledby="service-navigator-title">
+  <div class="service-navigator__heading">
+    <p class="eyebrow">A guided starting point</p>
+    <h2 id="service-navigator-title">What would you like to make easier?</h2>
+    <p>Choose the situation that feels closest to what you need now. You can still explore every service below.</p>
+  </div>
+
+  <div class="service-navigator__step" id="service-navigator-step-one">
+    <p class="service-navigator__step-label">Step 1 of 2</p>
+    <div class="service-navigator__choices" role="group" aria-label="Choose your main goal">
+      <button type="button" data-path="style">Define my personal style</button>
+      <button type="button" data-path="wardrobe">Improve my wardrobe</button>
+      <button type="button" data-service="Personal Shopping">Shop more intentionally</button>
+      <button type="button" data-service="The Travel Edit — Suitcase Styling">Prepare for travel</button>
+      <button type="button" data-path="occasion">Prepare for an occasion</button>
+      <button type="button" data-path="professional">Strengthen my professional image</button>
+      <button type="button" data-service="Complete Image Consulting">Explore everything together</button>
+      <button type="button" data-service="consultation">I’m not sure where to begin</button>
+    </div>
+  </div>
+
+  <div class="service-navigator__step" id="service-navigator-step-two" hidden>
+    <div class="service-navigator__step-topline">
+      <p class="service-navigator__step-label">Step 2 of 2</p>
+      <button class="service-navigator__back" type="button">Back</button>
+    </div>
+    <h3 id="service-navigator-refine-title"></h3>
+    <div class="service-navigator__choices" id="service-navigator-refine" role="group" aria-labelledby="service-navigator-refine-title"></div>
+  </div>
+
+  <div class="service-navigator__result" id="service-navigator-result" hidden tabindex="-1" aria-live="polite">
+    <p class="service-navigator__step-label">Recommended starting point</p>
+    <h3 id="service-navigator-result-title"></h3>
+    <p id="service-navigator-result-copy"></p>
+    <div class="service-navigator__actions">
+      <button class="button" id="service-navigator-view" type="button">View service details</button>
+      <a class="button button-dark" id="service-navigator-consult" href="consultation.html">Discuss this service</a>
+    </div>
+    <button class="service-navigator__restart" id="service-navigator-restart" type="button">Choose a different starting point</button>
+  </div>
+</section>
+
 <div class="service-groups"><section class="service-group" id="signature" aria-labelledby="group-1">
 <header class="service-group-heading"><h3 id="group-1"><span>The Signature</span><span>Experience</span></h3></header>
 <div><details class="service-item">
@@ -164,5 +210,6 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/service-navigator.js"></script>
 </body>
 </html>
