@@ -9,3 +9,5 @@ local-assets/
 *.py
 
 repair-backup-*/
+
+backup_*/
