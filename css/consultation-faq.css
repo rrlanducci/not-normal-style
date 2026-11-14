@@ -1,0 +1,113 @@
+/* Consultation FAQ */
+.consultation-page .consultation-faq {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(48px, 8vw, 130px);
+  padding: clamp(72px, 9vw, 130px) var(--page-gutter);
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.consultation-page .consultation-faq__intro {
+  max-width: 560px;
+}
+
+.consultation-page .consultation-faq__intro h2 {
+  margin: 14px 0 24px;
+}
+
+.consultation-page .consultation-faq__intro > p:last-child {
+  max-width: 520px;
+}
+
+.consultation-page .consultation-faq__items {
+  border-top: 1px solid var(--line);
+}
+
+.consultation-page .consultation-faq details {
+  border-bottom: 1px solid var(--line);
+}
+
+.consultation-page .consultation-faq summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 26px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.consultation-page .consultation-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.consultation-page .consultation-faq summary > span:first-child {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  line-height: 1.25;
+}
+
+.consultation-page .consultation-faq__icon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: transform 160ms ease;
+}
+
+.consultation-page .consultation-faq details[open] .consultation-faq__icon {
+  transform: rotate(45deg);
+}
+
+.consultation-page .consultation-faq details > div {
+  max-width: 720px;
+  padding: 0 52px 28px 0;
+}
+
+.consultation-page .consultation-faq details > div p {
+  margin: 0;
+}
+
+.consultation-page .consultation-faq a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.consultation-page .consultation-faq summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .consultation-page .consultation-faq {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+}
+
+@media (max-width: 760px) {
+  .consultation-page .consultation-faq {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+
+  .consultation-page .consultation-faq summary {
+    gap: 18px;
+    padding: 22px 0;
+  }
+
+  .consultation-page .consultation-faq details > div {
+    padding-right: 36px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .consultation-page .consultation-faq__icon {
+    transition: none;
+  }
+}
