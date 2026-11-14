@@ -144,3 +144,105 @@ if (consultationForm) {
     }
   });
 }
+
+/* Style Discovery consultation integration */
+(() => {
+  const form = document.querySelector("#consultation-form");
+  if (!form) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const style = params.get("style");
+  const influence = params.get("influence");
+  const concern = params.get("concern");
+  const service = params.get("service");
+
+  if (!style && !influence && !concern && !service) return;
+
+  const safeText = (value, max = 120) => (value || "").trim().slice(0, max);
+  const result = {
+    style: safeText(style),
+    influence: safeText(influence),
+    concern: safeText(concern),
+    service: safeText(service)
+  };
+
+  const concernLabels = {
+    comfort: "Comfort is important, but outfits can feel unfinished.",
+    predictable: "The wardrobe feels dependable but too predictable.",
+    outfits: "Quality pieces are difficult to turn into complete outfits.",
+    coherence: "The wardrobe has ideas but lacks coherence.",
+    confidence: "More confidence is wanted without feeling overdone.",
+    current: "Delicate details are appealing but can be difficult to make current.",
+    stronger: "Stronger outfits are wanted without feeling like a costume.",
+    unsure: "The personal style direction is still unclear."
+  };
+
+  const title = document.createElement("h2");
+  title.id = "style-discovery-summary-title";
+  title.textContent = "Your Style Discovery result";
+
+  const summary = document.createElement("section");
+  summary.className = "style-discovery-summary";
+  summary.setAttribute("aria-labelledby", title.id);
+  summary.appendChild(title);
+
+  const intro = document.createElement("p");
+  intro.textContent = "Your quiz result has been carried into this enquiry so Camila can review it with your message.";
+  summary.appendChild(intro);
+
+  const list = document.createElement("dl");
+  const addItem = (label, value) => {
+    if (!value) return;
+    const dt = document.createElement("dt");
+    const dd = document.createElement("dd");
+    dt.textContent = label;
+    dd.textContent = value;
+    list.append(dt, dd);
+  };
+  addItem("Leading direction", result.style);
+  addItem("Secondary influence", result.influence);
+  addItem("Recommended next step", result.service);
+  addItem("Main styling concern", concernLabels[result.concern] || result.concern);
+  summary.appendChild(list);
+
+  const editLink = document.createElement("a");
+  editLink.href = "style-quiz.html";
+  editLink.className = "style-discovery-summary__link";
+  editLink.textContent = "Retake Style Discovery";
+  summary.appendChild(editLink);
+
+  form.insertBefore(summary, form.firstChild);
+
+  const hiddenFields = {
+    "style-discovery-primary": result.style,
+    "style-discovery-secondary": result.influence,
+    "style-discovery-concern": concernLabels[result.concern] || result.concern,
+    "style-discovery-service": result.service
+  };
+
+  Object.entries(hiddenFields).forEach(([name, value]) => {
+    if (!value) return;
+    const input = document.createElement("input");
+    input.type = "hidden";
+    input.name = name;
+    input.value = value;
+    form.appendChild(input);
+  });
+
+  const message = form.elements.message;
+  if (message && !message.value.trim()) {
+    const lines = [
+      "I completed the Style Discovery quiz.",
+      result.style ? `Leading direction: ${result.style}` : "",
+      result.influence ? `Secondary influence: ${result.influence}` : "",
+      result.service ? `Recommended next step: ${result.service}` : "",
+      result.concern ? `Main styling concern: ${concernLabels[result.concern] || result.concern}` : "",
+      "",
+      "I would also like help with: "
+    ].filter((line, index, array) => line || (index > 0 && array[index - 1]));
+    message.value = lines.join("\n");
+  }
+
+  summary.scrollIntoView({ block: "start" });
+})();
+
