@@ -7,3 +7,5 @@ refine-*.py
 # Local design sources and helper scripts
 local-assets/
 *.py
+
+repair-backup-*/
