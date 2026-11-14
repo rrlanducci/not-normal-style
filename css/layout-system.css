@@ -431,3 +431,25 @@
   }
 }
 
+/* Style Discovery visibility v2 */
+.hero-secondary-link {
+  display: inline-block;
+  margin-left: 20px;
+  color: var(--black);
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-underline-offset: 6px;
+  text-transform: uppercase;
+}
+.hero-secondary-link:hover,
+.hero-secondary-link:focus-visible {
+  text-decoration-thickness: 2px;
+}
+@media (max-width: 760px) {
+  .hero-secondary-link {
+    display: block;
+    width: fit-content;
+    margin: 18px 0 0;
+  }
+}
+
