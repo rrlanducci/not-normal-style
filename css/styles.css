@@ -5241,3 +5241,9 @@ footer {
 .legal-page h2 {
   margin-bottom: 10px;
 }
+
+/* Automated functional repair: consultation success dialog */
+.success-modal { display:none; position:fixed; inset:0; z-index:9999; align-items:center; justify-content:center; padding:2rem; background:rgba(0,0,0,.55); }
+.success-modal__dialog { width:100%; max-width:560px; padding:3rem; border:1px solid var(--line); background:#fff; text-align:center; }
+.form-submit:disabled { cursor:wait; opacity:.65; }
+

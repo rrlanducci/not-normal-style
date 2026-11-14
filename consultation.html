@@ -35,22 +35,22 @@
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
     <nav id="main-navigation" aria-label="Main navigation">
-      about.html
+      <a href="about.html">About</a>
       <div class="nav-submenu">
         <div class="nav-submenu-topline">
-          services.html
+          <a href="services.html">Services</a>
           <button class="submenu-button" type="button" aria-expanded="false" aria-controls="services-submenu" aria-label="Show service categories">+</button>
         </div>
         <div class="submenu" id="services-submenu">
-          services.html#signature
-          services.html#discover
-          services.html#wardrobe
-          services.html#shopping
-          services.html#occasions
-          services.html#corporate
+          <a href="services.html#signature">The Signature Experience</a>
+          <a href="services.html#discover">Discover Your Style</a>
+          <a href="services.html#wardrobe">Your Wardrobe, Redefined</a>
+          <a href="services.html#shopping">Shopping &amp; Special Experiences</a>
+          <a href="services.html#occasions">Special Occasions</a>
+          <a href="services.html#corporate">Corporate &amp; Professional Image</a>
         </div>
       </div>
-      consultation.html
+      <a href="consultation.html">Consultation</a>
     </nav>
   </header>
   <main>
@@ -179,13 +179,13 @@
         <div class="consent-group">
           <label>
             <input id="privacy-acknowledgement" name="privacy-acknowledgement" type="checkbox" required>
-            <span>I have read the privacy.html and understand how my personal data will be used to handle my enquiry. <span aria-hidden="true">*</span></span>
+            <span>I have read the <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and understand how my personal data will be used to handle my enquiry. <span aria-hidden="true">*</span></span>
           </label>
           <p class="field-error" id="privacy-acknowledgement-error"></p>
         </div>
 
         <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
-        <button class="button button-dark form-submit" type="submit">Review enquiry</button>
+        <button class="button button-dark form-submit" type="submit">Send enquiry</button>
       </form>
     </section>
   </main>
@@ -216,25 +216,8 @@
     </div>
   </footer>
   
-<div id="consultation-success-modal" style="
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.55);
-z-index:9999;
-align-items:center;
-justify-content:center;
-padding:2rem;
-">
-
-  <div style="
-  background:#ffffff;
-  max-width:560px;
-  width:100%;
-  padding:3rem;
-  text-align:center;
-  border:1px solid #d8d4ce;
-  ">
+<div id="consultation-success-modal" class="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-modal-title" aria-hidden="true">
+  <div class="success-modal__dialog">
 
     <h2 id="success-modal-title" tabindex="-1">
       Thank you.
