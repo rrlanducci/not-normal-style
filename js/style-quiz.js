@@ -59,7 +59,17 @@
     document.querySelector("#progress-bar").style.width = `${percent}%`;
     const legend = region.querySelector("legend");
     legend.setAttribute("tabindex", "-1");
-    legend.focus();
+    legend.focus({ preventScroll: true });
+      requestAnimationFrame(() => {
+        const header = document.querySelector(".site-header");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const questionTop = window.scrollY + shell.getBoundingClientRect().top;
+        window.scrollTo({
+          top: Math.max(0, questionTop - headerHeight - 16),
+          left: 0,
+          behavior: "auto"
+        });
+      });
   }
 
   function serviceFor(concern) {
@@ -87,7 +97,17 @@
     document.querySelector("#consultation-link").href = `consultation.html?${params.toString()}`;
     shell.hidden = true;
     result.hidden = false;
-    result.focus();
+    result.focus({ preventScroll: true });
+      requestAnimationFrame(() => {
+        const header = document.querySelector(".site-header");
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const resultTop = window.scrollY + result.getBoundingClientRect().top;
+        window.scrollTo({
+          top: Math.max(0, resultTop - headerHeight - 16),
+          left: 0,
+          behavior: "auto"
+        });
+      });
   }
 
   document.querySelector("#start-quiz").addEventListener("click", () => { intro.hidden = true; shell.hidden = false; renderQuestion(); });

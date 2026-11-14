@@ -49,11 +49,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/layout-system.css">
 </head>
-<body>
+<body class="about-page">
   <header class="site-header">
     <a class="site-brand" href="index.html" aria-label="Not Normal Style home">
-      <img class="site-brand-logo" src="images/not-normal-style-logo-cropped.png" alt="">
+      <img class="site-brand-logo" src="images/not-normal-style-logo-cropped.png" alt="" width="420" height="420" decoding="async">
       <span class="site-brand-name">NOT NORMAL STYLE</span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
@@ -86,7 +87,10 @@
         <blockquote class="about-quote"><p>“I believe that when you feel good in what you wear, you feel more confident in who you are.”</p><cite>Camila Rades</cite></blockquote>
         
       </div>
-      <div class="about-portrait"><img src="images/hero-camila.jpg" alt="Camila Rades, personal image consultant"></div>
+      <div class="about-portrait"><picture class="optimised-hero-picture">
+          <source srcset="images/hero-camila.webp" type="image/webp">
+          <img src="images/hero-camila.jpg" alt="Camila Rades, personal image consultant" width="648" height="944" decoding="async" fetchpriority="high">
+        </picture></div>
       
     </section>
 

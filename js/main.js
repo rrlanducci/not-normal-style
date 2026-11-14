@@ -243,6 +243,6 @@ if (consultationForm) {
     message.value = lines.join("\n");
   }
 
-  summary.scrollIntoView({ block: "start" });
+  requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
 })();
 
