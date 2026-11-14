@@ -1,0 +1,1661 @@
+{
+  "summary": {
+    "html_files": 27,
+    "images": 20,
+    "errors": 103,
+    "warnings": 52,
+    "info": 30
+  },
+  "findings": [
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "404.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 21,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "about.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 60,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 97,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 98,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 99,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 100,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 101,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 102,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 103,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 139,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 146,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 125,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 126,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 127,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 128,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 129,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "a has no accessible name.",
+      "line": 130,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/privacy.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-package-20261109-230855/services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/about.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 19,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 19,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 100,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 101,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 102,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 103,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 104,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 105,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 106,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 142,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 149,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 19,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 131,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 132,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 133,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 134,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 135,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "a has no accessible name.",
+      "line": 136,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/privacy.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 19,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup-before-performance-rollback-20261109-231232/services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 19,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/about.html",
+      "message": "img asset is missing: images/not-normal-style-logo-cropped.png",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/about.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 36,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/about.html",
+      "message": "img asset is missing: images/hero-camila.jpg",
+      "line": 66,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "img asset is missing: images/not-normal-style-logo-cropped.png",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 36,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 137,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 138,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 139,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 140,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 141,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 142,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 143,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 183,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 190,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 254,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/index.html",
+      "message": "img asset is missing: images/not-normal-style-logo-cropped.png",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/index.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 36,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/index.html",
+      "message": "img asset is missing: images/hero-camila.jpg",
+      "line": 85,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "img asset is missing: images/not-normal-style-logo-cropped.png",
+      "line": 32,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 35,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-asset",
+      "file": "backup_20261114_013829/services.html",
+      "message": "img asset is missing: images/not-normal-style-logo-cropped.png",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "backup_20261114_013829/services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 36,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-lang",
+      "file": "backup_20261114_013829/test.html",
+      "message": "The html element has no lang attribute.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-noindex",
+      "file": "backup_20261114_013829/thank-you.html",
+      "message": "Transactional/error page should be marked noindex.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 41,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 142,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 143,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 144,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 145,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 146,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 147,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 148,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "input control has no associated label or accessible name.",
+      "line": 186,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 193,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "consultation.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 292,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "index.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 52,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 163,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 164,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 165,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 166,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 167,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "empty-control-name",
+      "file": "index.html",
+      "message": "a has no accessible name.",
+      "line": 168,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "privacy.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 40,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 41,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 84,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 85,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 86,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 87,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 88,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 89,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 90,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 91,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 98,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 109,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "services.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 112,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "style-quiz.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 32,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "style-quiz.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 36,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "style-quiz.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 37,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "style-quiz.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 37,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "unlabelled-control",
+      "file": "style-quiz.html",
+      "message": "button control has no associated label or accessible name.",
+      "line": 38,
+      "detail": null
+    },
+    {
+      "severity": "error",
+      "code": "missing-lang",
+      "file": "test.html",
+      "message": "The html element has no lang attribute.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "Image \"images/hero-camila.jpg\" lacks explicit width and height.",
+      "line": 46,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "Image \"images/hero-camila.jpg\" lacks explicit width and height.",
+      "line": 65,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-package-20261109-230855/privacy.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-package-20261109-230855/privacy.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-package-20261109-230855/services.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-package-20261109-230855/services.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup-before-performance-package-20261109-230855/services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-rollback-20261109-231232/about.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-rollback-20261109-231232/about.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-rollback-20261109-231232/privacy.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-rollback-20261109-231232/privacy.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup-before-performance-rollback-20261109-231232/services.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup-before-performance-rollback-20261109-231232/services.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/about.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/about.html",
+      "message": "Image \"images/hero-camila.jpg\" lacks explicit width and height.",
+      "line": 66,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/index.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/index.html",
+      "message": "Image \"images/hero-camila.jpg\" lacks explicit width and height.",
+      "line": 85,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-description",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "Meta description is missing.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 32,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/services.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-image-dimensions",
+      "file": "backup_20261114_013829/services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" lacks explicit width and height.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "canonical-count",
+      "file": "backup_20261114_013829/style-quiz.html",
+      "message": "Expected one canonical link; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "main-count",
+      "file": "backup_20261114_013829/style-quiz.html",
+      "message": "Expected exactly one main element; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-description",
+      "file": "backup_20261114_013829/style-quiz.html",
+      "message": "Meta description is missing.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/style-quiz.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "h1-count",
+      "file": "backup_20261114_013829/test.html",
+      "message": "Expected exactly one h1; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "main-count",
+      "file": "backup_20261114_013829/test.html",
+      "message": "Expected exactly one main element; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "backup_20261114_013829/test.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "large-image",
+      "file": "local-assets/Camila.jpg",
+      "message": "Image is 7.0 MB.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "h1-count",
+      "file": "style-quiz.html",
+      "message": "Expected exactly one h1; found 2.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "h1-count",
+      "file": "test.html",
+      "message": "Expected exactly one h1; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "main-count",
+      "file": "test.html",
+      "message": "Expected exactly one main element; found 0.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "warning",
+      "code": "missing-layout-system",
+      "file": "test.html",
+      "message": "Shared css/layout-system.css is not linked.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "404.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 18,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 57,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-package-20261109-230855/about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-package-20261109-230855/consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-package-20261109-230855/index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-package-20261109-230855/privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-package-20261109-230855/services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 13,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-rollback-20261109-231232/about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-rollback-20261109-231232/consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-rollback-20261109-231232/index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-rollback-20261109-231232/privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup-before-performance-rollback-20261109-231232/services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 16,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup_20261114_013829/about.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "inline-style",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "Inline style attributes found on line(s): 221, 232.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup_20261114_013829/consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup_20261114_013829/index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup_20261114_013829/privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 32,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "backup_20261114_013829/services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 33,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "inline-style",
+      "file": "backup_20261114_013829/thank-you.html",
+      "message": "Inline style attributes found on line(s): 20.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "consultation.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 38,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "images/og-image.jpg",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "images/og-image.png",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "images/og-image.svg",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "index.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 49,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "local-assets/Camila.jpg",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "local-assets/NotNormalStylelogo.png",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "unreferenced-image",
+      "file": "nns-favicon-512.png",
+      "message": "Image is not referenced by audited HTML metadata or markup.",
+      "line": null,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "privacy.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 37,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "services.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 38,
+      "detail": null
+    },
+    {
+      "severity": "info",
+      "code": "empty-alt",
+      "file": "style-quiz.html",
+      "message": "Image \"images/not-normal-style-logo-cropped.png\" has empty alt text; verify it is decorative.",
+      "line": 31,
+      "detail": null
+    }
+  ],
+  "images": [
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 3221,
+      "referenced": false,
+      "width": 180,
+      "height": 180
+    },
+    {
+      "path": "backup-before-performance-package-20261109-230855/images/hero-camila.jpg",
+      "bytes": 394165,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "backup-before-performance-package-20261109-230855/images/not-normal-style-logo-cropped.png",
+      "bytes": 22249,
+      "referenced": true,
+      "width": 420,
+      "height": 420
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/hero-camila-640.avif",
+      "bytes": 20192,
+      "referenced": true,
+      "width": 640,
+      "height": 932
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/hero-camila-640.webp",
+      "bytes": 34160,
+      "referenced": true,
+      "width": 640,
+      "height": 932
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/hero-camila-648.avif",
+      "bytes": 20607,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/hero-camila-648.webp",
+      "bytes": 34574,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/hero-camila.jpg",
+      "bytes": 394165,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "backup-before-performance-rollback-20261109-231232/images/not-normal-style-logo-cropped.png",
+      "bytes": 22249,
+      "referenced": true,
+      "width": 420,
+      "height": 420
+    },
+    {
+      "path": "favicon-32x32.png",
+      "bytes": 676,
+      "referenced": true,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 2156,
+      "referenced": true,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "path": "images/hero-camila.jpg",
+      "bytes": 394165,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "images/hero-camila.webp",
+      "bytes": 34574,
+      "referenced": true,
+      "width": 648,
+      "height": 944
+    },
+    {
+      "path": "images/not-normal-style-logo-cropped.png",
+      "bytes": 22249,
+      "referenced": true,
+      "width": 420,
+      "height": 420
+    },
+    {
+      "path": "images/og-image.jpg",
+      "bytes": 263773,
+      "referenced": false,
+      "width": 4032,
+      "height": 2116
+    },
+    {
+      "path": "images/og-image.png",
+      "bytes": 74049,
+      "referenced": false,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "images/og-image.svg",
+      "bytes": 1284,
+      "referenced": false,
+      "viewBox": "0 0 1200 630"
+    },
+    {
+      "path": "local-assets/Camila.jpg",
+      "bytes": 7355475,
+      "referenced": false,
+      "width": 3024,
+      "height": 4032
+    },
+    {
+      "path": "local-assets/NotNormalStylelogo.png",
+      "bytes": 31372,
+      "referenced": false,
+      "width": 621,
+      "height": 698
+    },
+    {
+      "path": "nns-favicon-512.png",
+      "bytes": 5802,
+      "referenced": false,
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "audited_files": [
+    "404.html",
+    "about.html",
+    "backup-before-performance-package-20261109-230855/about.html",
+    "backup-before-performance-package-20261109-230855/consultation.html",
+    "backup-before-performance-package-20261109-230855/index.html",
+    "backup-before-performance-package-20261109-230855/privacy.html",
+    "backup-before-performance-package-20261109-230855/services.html",
+    "backup-before-performance-rollback-20261109-231232/about.html",
+    "backup-before-performance-rollback-20261109-231232/consultation.html",
+    "backup-before-performance-rollback-20261109-231232/index.html",
+    "backup-before-performance-rollback-20261109-231232/privacy.html",
+    "backup-before-performance-rollback-20261109-231232/services.html",
+    "backup_20261114_013829/about.html",
+    "backup_20261114_013829/consultation.html",
+    "backup_20261114_013829/index.html",
+    "backup_20261114_013829/privacy.html",
+    "backup_20261114_013829/services.html",
+    "backup_20261114_013829/style-quiz.html",
+    "backup_20261114_013829/test.html",
+    "backup_20261114_013829/thank-you.html",
+    "consultation.html",
+    "index.html",
+    "privacy.html",
+    "services.html",
+    "style-quiz.html",
+    "test.html",
+    "thank-you.html"
+  ]
+}
