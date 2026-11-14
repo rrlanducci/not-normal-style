@@ -11,3 +11,5 @@ local-assets/
 repair-backup-*/
 
 backup_*/
+
+.DS_Store
